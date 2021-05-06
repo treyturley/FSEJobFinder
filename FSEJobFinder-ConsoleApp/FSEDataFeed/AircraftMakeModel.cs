@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace FSEDataFeed
 {
@@ -12,7 +8,7 @@ namespace FSEDataFeed
         public const string Boeing747_400 = "Boeing 747-400";
     }
 
-    //TODO: load all of the make model details from the csv file
+    //TODO: load all of the make model details from the csv file. Maybe look into seeing how to get the full list from FSE
     public class AircraftMakeModelDetails
     {
         public static List<string> AircraftMakeModelList = new List<string>() {

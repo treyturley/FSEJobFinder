@@ -59,7 +59,7 @@ namespace FSEDataFeed.Tests
                 result = (AircraftItems)serializer.Deserialize(fileStream);
             }
 
-            Assert.IsTrue(result.AircraftList[rentalAircraftIndex].isRentable());
+            Assert.IsTrue(result.AircraftList[rentalAircraftIndex].IsRentable());
         }
 
         [TestMethod()]
@@ -82,13 +82,13 @@ namespace FSEDataFeed.Tests
             }
 
             //see if we can rent a plane with no rental prices set
-            Assert.IsFalse(result.AircraftList[notRentable_NoDryWetRentPrice].isRentable());
+            Assert.IsFalse(result.AircraftList[notRentable_NoDryWetRentPrice].IsRentable());
 
             //see if we can rent a plane that needs repairing
-            Assert.IsFalse(result.AircraftList[notRentable_NeedsRepair].isRentable());
+            Assert.IsFalse(result.AircraftList[notRentable_NeedsRepair].IsRentable());
 
             //see if we can rent a plance that is already rented
-            Assert.IsFalse(result.AircraftList[notRantable_AlreadyRented].isRentable());
+            Assert.IsFalse(result.AircraftList[notRantable_AlreadyRented].IsRentable());
 
         }
     }

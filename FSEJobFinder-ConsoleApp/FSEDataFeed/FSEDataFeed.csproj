@@ -42,8 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aircraft.cs" />
+    <Compile Include="AircraftItems.cs" />
     <Compile Include="AircraftMakeModel.cs" />
-    <Compile Include="ConsoleMain.cs" />
+    <Compile Include="Assignment.cs" />
     <Compile Include="FSEDataAPI.cs" />
     <Compile Include="FSEDataExport.cs" />
     <Compile Include="FSEDataExportURLBuilder.cs" />
@@ -76,6 +77,7 @@
     <Content Include="StaticFiles\RawICAOJobs.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="StaticFiles\UserKey.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

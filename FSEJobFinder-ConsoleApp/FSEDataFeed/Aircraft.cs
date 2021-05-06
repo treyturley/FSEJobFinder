@@ -1,22 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace FSEDataFeed
 {
-    //TODO: need to see if we can use a set of aircraft instead of a list of aircraft
-    [Serializable, XmlRoot("AircraftItems",Namespace="https://server.fseconomy.net")]
-    public class AircraftItems
-    {
-        [XmlElement("Aircraft")]
-        public List<Aircraft> AircraftList { get; set; }
-    }
-
-    
     public class Aircraft : IEquatable<Aircraft>, IComparable<Aircraft>
     {
         [XmlElement("SerialNumber")]
@@ -81,7 +68,7 @@ namespace FSEDataFeed
         {
             if (other == null) return 1;
             else return this.SerialNumber.CompareTo(other.SerialNumber);
-            
+
         }
 
         /// <summary>
@@ -104,7 +91,7 @@ namespace FSEDataFeed
         /// <returns></returns>
         public bool Equals(Aircraft other)
         {
-            if (other == null) return false;            
+            if (other == null) return false;
             if (this.SerialNumber.Equals(other.SerialNumber)) return true;
             return false;
         }
@@ -113,7 +100,7 @@ namespace FSEDataFeed
         /// checks to see if this plane can be rented
         /// </summary>
         /// <returns></returns>
-        public bool isRentable()
+        public bool IsRentable()
         {
             //TODO: Complete full implementation
             //check for both rental amounts, make sure its not already rented, 
@@ -131,9 +118,9 @@ namespace FSEDataFeed
             if (rentalPrice != 0.0)
             {
                 //its rentable
-                if(RentedBy.CompareTo("Not rented.") == 0)
+                if (RentedBy.CompareTo("Not rented.") == 0)
                 {
-                    if(int.Parse(NeedsRepair) == 0)
+                    if (int.Parse(NeedsRepair) == 0)
                     {
                         result = true;
                     }
@@ -174,24 +161,5 @@ namespace FSEDataFeed
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(FeeOwed);
             return hashCode;
         }
-    }
-   
-
-    public class AircraftSerializer
-    {
-        public List<Aircraft> Deserialize()
-        {
-            
-            string path = "./StaticFiles/172TestFile.xml";
-
-            XmlSerializer serializer = new XmlSerializer(typeof(List<Aircraft>), new XmlRootAttribute("AircraftItems"));
-
-            StreamReader reader = new StreamReader(path);
-            List<Aircraft> allAircraft = (List<Aircraft>)serializer.Deserialize(reader);
-            reader.Close();
-
-            return allAircraft;
-        }
-            
     }
 }

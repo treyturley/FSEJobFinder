@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FSEDataFeed
 {
@@ -61,6 +58,7 @@ namespace FSEDataFeed
         /// <returns></returns>
         public Assignment getBestCommercialAssignment(string makeModel)
         {
+            //TODO: See if we already have a list assignment for the makeModel and return that if its not stale. otherwise get new data from FSE.
             List<Assignment> availableAssignments = getAllCommercialAssignments(makeModel);
 
             //sanity check that there are assignments available

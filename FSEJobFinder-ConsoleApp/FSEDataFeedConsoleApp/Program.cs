@@ -13,7 +13,6 @@ namespace FSEJobfinderConsoleApp
             Console.WriteLine("Choose One Option:");
             Console.WriteLine("1: Best Available assignment for a Boeing 737-800");
             Console.WriteLine("2: Top 5 assignments for a Boeing 737-800");
-            //TODO: let me specify if i want to start or finish in a specific country.
             Console.WriteLine("3: All 737 Assignments to or from the US");
             Console.WriteLine("4: Best Available assignment for a Boeing 747-400");
             Console.WriteLine("5: All 747 Assignments to or from the US");
@@ -108,7 +107,5 @@ namespace FSEJobfinderConsoleApp
             Console.WriteLine(Environment.NewLine + "Type \"Exit\" to quite.");
             Console.Write(Environment.NewLine + "Enter your choice: ");
         }
-
-        
     }
 }
