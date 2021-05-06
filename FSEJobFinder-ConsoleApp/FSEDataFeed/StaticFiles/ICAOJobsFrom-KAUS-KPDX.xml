@@ -1,0 +1,1144 @@
+<IcaoJobsFrom xmlns="http://server.fseconomy.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:schemaLocation="http://server.fseconomy.net/static/xsd/datafeed_jobs.xsd" total="71">
+  <Assignment>
+    <Id>289106876</Id>
+    <Location>KAUS</Location>
+    <ToIcao>3R9</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Northern Air Passenger</Commodity>
+    <Pay>414.00</Pay>
+    <Expires>18 hrs</Expires>
+    <ExpireDateTime>2019-08-19 18:02:17</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>    
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>248760517</Id>
+    <Location>KAUS</Location>
+    <ToIcao>06TA</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>200</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>100LL Fuel</Commodity>
+    <Pay>0.00</Pay>
+    <Expires>never</Expires>
+    <ExpireDateTime>9999/1/1 00:00:00</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>    
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289088579</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KACT</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Courier Envelope</Commodity>
+    <Pay>157.00</Pay>
+    <Expires>19 hrs</Expires>
+    <ExpireDateTime>2019-08-19 19:03:20</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289170092</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KRKP</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>6</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Business Charter</Commodity>
+    <Pay>1425.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 22:33:57</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289139978</Id>
+    <Location>KAUS</Location>
+    <ToIcao>3TA6</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Gov't Official</Commodity>
+    <Pay>724.00</Pay>
+    <Expires>19 hrs</Expires>
+    <ExpireDateTime>2019-08-19 19:03:58</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289114404</Id>
+    <Location>KAUS</Location>
+    <ToIcao>9R5</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Courier Envelope</Commodity>
+    <Pay>255.00</Pay>
+    <Expires>16 hrs</Expires>
+    <ExpireDateTime>2019-08-19 15:33:46</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289164401</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KSJT</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Stratocaster Aviation Passenger</Commodity>
+    <Pay>902.00</Pay>
+    <Expires>4 days</Expires>
+    <ExpireDateTime>2019-08-23 16:32:15</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289151518</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KSJT</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Stratocaster Aviation Passenger</Commodity>
+    <Pay>902.00</Pay>
+    <Expires>4 days</Expires>
+    <ExpireDateTime>2019-08-23 11:02:27</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289061358</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KNQI</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>3</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Patient Transport</Commodity>
+    <Pay>3445.00</Pay>
+    <Expires>1 hrs</Expires>
+    <ExpireDateTime>2019-08-19 00:33:31</ExpireDateTime>
+    <Type>VIP</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289118060</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KSJT</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>100</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Airline Pilot for Hire</Commodity>
+    <Pay>1902.00</Pay>
+    <Expires>3 days</Expires>
+    <ExpireDateTime>2019-08-22 22:02:43</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288885828</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Rancher</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 01:32:50</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289087193</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Exotic Dancer</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 10:33:12</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289153818</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>UT Student</Commodity>
+    <Pay>1474.00</Pay>
+    <Expires>6 days</Expires>
+    <ExpireDateTime>2019-08-25 12:02:28</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289087192</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Exotic Dancer</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 10:33:12</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289108367</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Exotic Dancer</Commodity>
+    <Pay>1474.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 18:32:16</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289054358</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Charter Passengers</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>4 days</Expires>
+    <ExpireDateTime>2019-08-23 22:02:21</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289093313</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Air Taxi Passenger</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 13:01:39</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288951508</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>College Co-eds</Commodity>
+    <Pay>1474.00</Pay>
+    <Expires>3 days</Expires>
+    <ExpireDateTime>2019-08-22 04:02:58</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288943053</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>UT Student</Commodity>
+    <Pay>1474.00</Pay>
+    <Expires>3 days</Expires>
+    <ExpireDateTime>2019-08-22 00:32:09</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288967642</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Charter Passengers</Commodity>
+    <Pay>906.00</Pay>
+    <Expires>3 days</Expires>
+    <ExpireDateTime>2019-08-22 11:01:57</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288904542</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAFW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Exotic Dancer</Commodity>
+    <Pay>1474.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 08:31:48</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289132002</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KBMT</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>3</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Patient Transport</Commodity>
+    <Pay>3490.00</Pay>
+    <Expires>22 hrs</Expires>
+    <ExpireDateTime>2019-08-19 22:03:38</ExpireDateTime>
+    <Type>VIP</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289015972</Id>
+    <Location>KAUS</Location>
+    <ToIcao>4TS7</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>127</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Air Courier</Commodity>
+    <Pay>1330.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 03:33:41</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289176030</Id>
+    <Location>KAUS</Location>
+    <ToIcao>MM0J</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>6</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Carrier Overbook</Commodity>
+    <Pay>2523.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 03:04:09</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289175785</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KMKO</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>5</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Group Charter</Commodity>
+    <Pay>3403.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 15:04:02</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289117598</Id>
+    <Location>KAUS</Location>
+    <ToIcao>T77</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>6</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Carrier Overbook</Commodity>
+    <Pay>2526.00</Pay>
+    <Expires>21 hrs</Expires>
+    <ExpireDateTime>2019-08-19 20:34:02</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289082455</Id>
+    <Location>KAUS</Location>
+    <ToIcao>MM1E</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>4</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Group Charter</Commodity>
+    <Pay>3117.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 19:33:40</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <Type>Trip-Only</Type>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288931329</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KNEW</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>26</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Passengers</Commodity>
+    <Pay>11153.00</Pay>
+    <Expires>12 hrs</Expires>
+    <ExpireDateTime>2019-08-19 12:03:32</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289084876</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAEG</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>5748</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Industrial Cargo</Commodity>
+    <Pay>14412.00</Pay>
+    <Expires>26 mins</Expires>
+    <ExpireDateTime>2019-08-18 23:33:24</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289085959</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KAEG</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>10798</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Industrial Cargo</Commodity>
+    <Pay>19036.00</Pay>
+    <Expires>1 hrs</Expires>
+    <ExpireDateTime>2019-08-19 01:03:21</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288802084</Id>
+    <Location>KAUS</Location>
+    <ToIcao>KCII</ToIcao>
+    <FromIcao>KAUS</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>World Traveler</Commodity>
+    <Pay>3662.00</Pay>
+    <Expires>22 hrs</Expires>
+    <ExpireDateTime>2019-08-19 21:33:29</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288931426</Id>
+    <Location>KPDX</Location>
+    <ToIcao>OG30</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>OREX Passenger</Commodity>
+    <Pay>362.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 19:31:36</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289166921</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>DavAir Pilot &#128104;&#8205;&#9992;&#65039;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 17:33:01</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289124886</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Newspaper Bale &#128240;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 00:32:33</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289175013</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Orca Packet Passenger &#128104;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 21:01:56</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289160744</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pharmaceutical Package &#128138;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 15:01:58</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289146664</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Aerospace Component &#128752;&#65039;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 09:02:18</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289160745</Id>
+    <Location>KPDX</Location>
+    <ToIcao>4S9</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Package &#128230;&#9763;&#65039;</Commodity>
+    <Pay>459.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 15:01:58</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>222231290</Id>
+    <Location>KPDX</Location>
+    <ToIcao>91OR</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>4000</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Building materials</Commodity>
+    <Pay>0.00</Pay>
+    <Expires>never</Expires>
+    <ExpireDateTime>9999/1/1 00:00:00</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289138155</Id>
+    <Location>KPDX</Location>
+    <ToIcao>OR52</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Boy Ranger</Commodity>
+    <Pay>790.00</Pay>
+    <Expires>6 days</Expires>
+    <ExpireDateTime>2019-08-25 05:32:57</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289101959</Id>
+    <Location>KPDX</Location>
+    <ToIcao>2W3</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Courier Envelope</Commodity>
+    <Pay>154.00</Pay>
+    <Expires>11 hrs</Expires>
+    <ExpireDateTime>2019-08-19 11:03:23</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289176686</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KEUG</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Wigsmaked Streamer</Commodity>
+    <Pay>831.00</Pay>
+    <Expires>8 days</Expires>
+    <ExpireDateTime>2019-08-27 21:33:07</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289161594</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KPSC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>8</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Regional Svc</Commodity>
+    <Pay>1430.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 19:03:44</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288901974</Id>
+    <Location>KPDX</Location>
+    <ToIcao>WN40</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>TAIR Portlander</Commodity>
+    <Pay>899.00</Pay>
+    <Expires>5 days</Expires>
+    <ExpireDateTime>2019-08-24 07:31:42</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288687244</Id>
+    <Location>KPDX</Location>
+    <ToIcao>WN40</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Roses</Commodity>
+    <Pay>899.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 19:31:47</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289170031</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KLMT</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>8</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Regional Svc</Commodity>
+    <Pay>2076.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 21:33:55</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289074185</Id>
+    <Location>KPDX</Location>
+    <ToIcao>3S4</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>3</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Cave Junction Vacationers</Commodity>
+    <Pay>2000.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 05:32:54</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289114216</Id>
+    <Location>KPDX</Location>
+    <ToIcao>3S4</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Oregon Caves Tourist</Commodity>
+    <Pay>927.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 20:33:37</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289104009</Id>
+    <Location>KPDX</Location>
+    <ToIcao>3S4</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>2</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Smokejumpers</Commodity>
+    <Pay>1505.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 17:01:53</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289093273</Id>
+    <Location>KPDX</Location>
+    <ToIcao>3S4</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Smokejumper</Commodity>
+    <Pay>927.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 13:01:29</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289108345</Id>
+    <Location>KPDX</Location>
+    <ToIcao>3S4</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Oregon Caves Tourist</Commodity>
+    <Pay>927.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 18:32:11</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289110738</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CYVR</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>68</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Pilot for Hire</Commodity>
+    <Pay>3173.00</Pay>
+    <Expires>20 hrs</Expires>
+    <ExpireDateTime>2019-08-19 20:03:46</ExpireDateTime>
+    <Type>All-In</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>37101</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289108000</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CYQQ</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>5223</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Cargo Containers</Commodity>
+    <Pay>6328.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 00:03:50</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289073641</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KMYL</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>11</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Regional Svc</Commodity>
+    <Pay>4073.00</Pay>
+    <Expires>14 hrs</Expires>
+    <ExpireDateTime>2019-08-19 14:03:42</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289102367</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KRDD</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>18</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Carrier Outsource</Commodity>
+    <Pay>5865.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 09:03:36</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289175783</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CYKA</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>4</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Group Charter</Commodity>
+    <Pay>2441.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 21:04:02</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>270574150</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KAHC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>0</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>null</Commodity>
+    <Pay>0.00</Pay>
+    <Expires>never</Expires>
+    <ExpireDateTime>9999/1/1 00:00:00</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289178263</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CYGE</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>14</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Passengers</Commodity>
+    <Pay>6471.00</Pay>
+    <Expires>3 days</Expires>
+    <ExpireDateTime>2019-08-22 21:04:14</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288959018</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CZPC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>26</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Passengers</Commodity>
+    <Pay>11673.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 17:03:35</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>288990045</Id>
+    <Location>KPDX</Location>
+    <ToIcao>2Q3</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>22</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Passengers</Commodity>
+    <Pay>10235.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 03:03:43</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>273285457</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSFO</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>0</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>null</Commodity>
+    <Pay>0.00</Pay>
+    <Expires>never</Expires>
+    <ExpireDateTime>9999/1/1 00:00:00</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>256772123</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSFO</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>0</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>null</Commodity>
+    <Pay>0.00</Pay>
+    <Expires>never</Expires>
+    <ExpireDateTime>9999/1/1 00:00:00</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289159753</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Alaska Passenger</Commodity>
+    <Pay>970.00</Pay>
+    <Expires>4 days</Expires>
+    <ExpireDateTime>2019-08-23 14:32:29</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289132967</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Southwest Passenger</Commodity>
+    <Pay>970.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 03:33:17</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289128839</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>4</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Alaska Passengers</Commodity>
+    <Pay>2554.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 02:03:34</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289113714</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>5</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Delta Passengers</Commodity>
+    <Pay>2995.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 20:31:39</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289106873</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Alaska Passenger</Commodity>
+    <Pay>970.00</Pay>
+    <Expires>1 days</Expires>
+    <ExpireDateTime>2019-08-20 18:02:13</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289144260</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KSJC</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>1</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>American Passenger</Commodity>
+    <Pay>970.00</Pay>
+    <Expires>4 days</Expires>
+    <ExpireDateTime>2019-08-23 08:02:22</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>False</Express>
+    <PtAssignment>true</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289172076</Id>
+    <Location>KPDX</Location>
+    <ToIcao>CYXJ</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>7224</Amount>
+    <UnitType>kg</UnitType>
+    <Commodity>Industrial Cargo</Commodity>
+    <Pay>22026.00</Pay>
+    <Expires>2 days</Expires>
+    <ExpireDateTime>2019-08-21 06:33:33</ExpireDateTime>
+    <Type>Trip-Only</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>0</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289170182</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KLAS</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>112</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>Pax - Airline Pilot for Hire</Commodity>
+    <Pay>5206.00</Pay>
+    <Expires>15 hrs</Expires>
+    <ExpireDateTime>2019-08-19 14:33:59</ExpireDateTime>
+    <Type>All-In</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>39754</AircraftId>
+  </Assignment>
+  <Assignment>
+    <Id>289169024</Id>
+    <Location>KPDX</Location>
+    <ToIcao>KONT</ToIcao>
+    <FromIcao>KPDX</FromIcao>
+    <Amount>121</Amount>
+    <UnitType>passengers</UnitType>
+    <Commodity>-Airline Pilot for Hire-</Commodity>
+    <Pay>6183.00</Pay>
+    <Expires>7 hrs</Expires>
+    <ExpireDateTime>2019-08-19 07:03:56</ExpireDateTime>
+    <Type>All-In</Type>
+    <Express>True</Express>
+    <PtAssignment>false</PtAssignment>
+    <AircraftId>40211</AircraftId>
+  </Assignment>
+</IcaoJobsFrom>

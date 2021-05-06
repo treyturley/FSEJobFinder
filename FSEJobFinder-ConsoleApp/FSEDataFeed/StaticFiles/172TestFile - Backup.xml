@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AircraftItems>
+  <Aircraft>
+    <SerialNumber>7</SerialNumber>
+    <MakeModel>Cessna 172 Skyhawk</MakeModel>
+    <Registration>EC-JNB</Registration>
+    <Owner>jodenia</Owner>
+    <Location>LEBZ</Location>
+    <LocationName>Talavera La Real AB, Badajoz, Spain</LocationName>
+    <Home>LEVC</Home>
+    <SalePrice>0.00</SalePrice>
+    <SellbackPrice>112091.00</SellbackPrice>
+    <Equipment>IFR/AP/GPS</Equipment>
+    <RentalDry>0.00</RentalDry>
+    <RentalWet>0.00</RentalWet>
+    <RentalType>hour</RentalType>
+    <Bonus>0</Bonus>
+    <RentalTime>10800</RentalTime>
+    <RentedBy>Not rented.</RentedBy>
+    <FuelPct>0.63</FuelPct>
+    <NeedsRepair>0</NeedsRepair>
+    <AirframeTime>271:06</AirframeTime>
+    <EngineTime>271:06</EngineTime>
+    <TimeLast100hr>05:14</TimeLast100hr>
+    <LeasedFrom>nofarig13</LeasedFrom>
+    <MonthlyFee>1121.00</MonthlyFee>
+    <FeeOwed>1121.00</FeeOwed>
+  </Aircraft>
+  <Aircraft>
+    <SerialNumber>19</SerialNumber>
+    <MakeModel>Cessna 172 Skyhawk</MakeModel>
+    <Registration>EC-LPD</Registration>
+    <Owner>Astur Airlines (Gonzalodiaz)</Owner>
+    <Location>RJSC</Location>
+    <LocationName>Yamagata, Yamagata, Japan</LocationName>
+    <Home>LEJR</Home>
+    <SalePrice>0.00</SalePrice>
+    <SellbackPrice>112234.00</SellbackPrice>
+    <Equipment>IFR/AP/GPS</Equipment>
+    <RentalDry>500.00</RentalDry>
+    <RentalWet>750.00</RentalWet>
+    <RentalType>hour</RentalType>
+    <Bonus>300</Bonus>
+    <RentalTime>10800</RentalTime>
+    <RentedBy>Not rented.</RentedBy>
+    <FuelPct>0.17</FuelPct>
+    <NeedsRepair>0</NeedsRepair>
+    <AirframeTime>296:07</AirframeTime>
+    <EngineTime>258:20</EngineTime>
+    <TimeLast100hr>64:41</TimeLast100hr>
+    <LeasedFrom>NA</LeasedFrom>
+    <MonthlyFee>1123.00</MonthlyFee>
+    <FeeOwed>0.00</FeeOwed>
+  </Aircraft>
+  <Aircraft>
+    <SerialNumber>42</SerialNumber>
+    <MakeModel>Cessna 172 Skyhawk</MakeModel>
+    <Registration>N-775MX</Registration>
+    <Owner>WWA - World Wide Airline (Mhit)</Owner>
+    <Location>CYZT</Location>
+    <LocationName>Port Hardy, Port Hardy, British Columbia, Canada</LocationName>
+    <Home>CGA</Home>
+    <SalePrice>0.00</SalePrice>
+    <SellbackPrice>112173.00</SellbackPrice>
+    <Equipment>IFR/AP/GPS</Equipment>
+    <RentalDry>84.00</RentalDry>
+    <RentalWet>130.00</RentalWet>
+    <RentalType>hour</RentalType>
+    <Bonus>30</Bonus>
+    <RentalTime>18000</RentalTime>
+    <RentedBy>Not rented.</RentedBy>
+    <FuelPct>0.56</FuelPct>
+    <NeedsRepair>1</NeedsRepair>
+    <AirframeTime>266:08</AirframeTime>
+    <EngineTime>266:08</EngineTime>
+    <TimeLast100hr>35:47</TimeLast100hr>
+    <LeasedFrom>NA</LeasedFrom>
+    <MonthlyFee>1122.00</MonthlyFee>
+    <FeeOwed>23562.00</FeeOwed>
+  </Aircraft>
+  <Aircraft>
+    <SerialNumber>650</SerialNumber>
+    <MakeModel>Cessna 172 Skyhawk</MakeModel>
+    <Registration>N739NU</Registration>
+    <Owner>Batgirl</Owner>
+    <Location>TN20</Location>
+    <LocationName>Seymour Air Park, Inc., Sevierville, Tennessee, United States</LocationName>
+    <Home>KRYY</Home>
+    <SalePrice>0.00</SalePrice>
+    <SellbackPrice>114549.00</SellbackPrice>
+    <Equipment>IFR/AP/GPS</Equipment>
+    <RentalDry>98.00</RentalDry>
+    <RentalWet>145.00</RentalWet>
+    <RentalType>hour</RentalType>
+    <Bonus>35</Bonus>
+    <RentalTime>21600</RentalTime>
+    <RentedBy>Not rented.</RentedBy>
+    <FuelPct>0.14</FuelPct>
+    <NeedsRepair>1</NeedsRepair>
+    <AirframeTime>121:59</AirframeTime>
+    <EngineTime>121:59</EngineTime>
+    <TimeLast100hr>64:37</TimeLast100hr>
+    <LeasedFrom>NA</LeasedFrom>
+    <MonthlyFee>1145.00</MonthlyFee>
+    <FeeOwed>9161.00</FeeOwed>
+  </Aircraft>
+  <Aircraft>
+    <SerialNumber>650</SerialNumber>
+    <MakeModel>Cessna 172 Skyhawk</MakeModel>
+    <Registration>N118GT</Registration>
+    <Owner>Nirvana</Owner>
+    <Location>TN20</Location>
+    <LocationName>Seymour Air Park, Inc., Sevierville, Tennessee, United States</LocationName>
+    <Home>KRYY</Home>
+    <SalePrice>0.00</SalePrice>
+    <SellbackPrice>114549.00</SellbackPrice>
+    <Equipment>IFR/AP/GPS</Equipment>
+    <RentalDry>98.00</RentalDry>
+    <RentalWet>145.00</RentalWet>
+    <RentalType>hour</RentalType>
+    <Bonus>35</Bonus>
+    <RentalTime>21600</RentalTime>
+    <RentedBy>Nirvana</RentedBy>
+    <FuelPct>0.14</FuelPct>
+    <NeedsRepair>0</NeedsRepair>
+    <AirframeTime>121:59</AirframeTime>
+    <EngineTime>121:59</EngineTime>
+    <TimeLast100hr>64:37</TimeLast100hr>
+    <LeasedFrom>NA</LeasedFrom>
+    <MonthlyFee>1145.00</MonthlyFee>
+    <FeeOwed>0.00</FeeOwed>
+  </Aircraft>
+</AircraftItems>

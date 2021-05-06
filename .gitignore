@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+#user key is user specific so ignore it
+/FSEJobFinder-ConsoleApp/FSEDataFeed/StaticFiles/UserKey.txt
+/FSEJobFinder-ConsoleApp/FSEDataFeed/StaticFiles/DataExports.txt
