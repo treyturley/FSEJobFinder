@@ -1,1 +1,1 @@
-﻿Go to https://server.fseconomy.net/datafeeds.jsp to get your user access key. Replace the contents of this file with the key.
+﻿Go to https://server.fseconomy.net/datafeeds.jsp to get your user access key. Replace the contents of this file with the key. Once updated, make sure not to push your key to the repo.
