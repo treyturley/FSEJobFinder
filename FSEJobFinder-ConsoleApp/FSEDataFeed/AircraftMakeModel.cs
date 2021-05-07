@@ -4,6 +4,7 @@ namespace FSEDataFeed
 {
     public static class AircraftMakeModelStrEnum
     {
+        public const string AirbusA320_MSFS = "Airbus A320 (MSFS)";
         public const string Boeing737_800 = "Boeing 737-800";
         public const string Boeing747_400 = "Boeing 747-400";
     }

@@ -64,11 +64,12 @@ namespace FSEDataFeed
         /// <summary>
         /// Get all aircraft from FSE given the passed in make and model
         /// </summary>
-        /// <param name="makeModel"></param>
-        /// <returns></returns>
+        /// <param name="makeModel">the airplane we want to query FSE for.</param>
+        /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel</returns>
         public  AircraftItems GetAircraftByMakeModel(string makeModel)
         {
-            //TODO: If we have recently made a requests to get the AircraftItems for this MakeModel, just return that data
+            //TODO: If we have recently made a requests to get the AircraftItems for this MakeModel, 
+            //just return that data instead of call FSE again
 
             AircraftItems aircraftItems = null;
             if (!debugEnabled)
@@ -79,6 +80,7 @@ namespace FSEDataFeed
 
                 XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
 
+                accessKeyHitCount++;
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                 using (Stream stream = response.GetResponseStream())                                
                 {                    
@@ -90,8 +92,8 @@ namespace FSEDataFeed
             }
             else
             {
-                //use static test data
-                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\AircraftItems_737.xml";
+                //use static test data for AircraftItems
+                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\AircraftItems_AirbusA320_MSFS.xml";
                 XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {
@@ -103,6 +105,7 @@ namespace FSEDataFeed
 
         public IcaoJobsFrom GetIcaoJobsFrom(List<string> ICAOs)
         {
+            //TODO: name this better. its really a list of all of the assignments that start at one of the ICAOs in the passed in list.
             IcaoJobsFrom allICAOWithJobs = null;
 
             if (!debugEnabled)
@@ -116,6 +119,7 @@ namespace FSEDataFeed
                 else if(ICAOs.Count == 1)
                 {
                     //TODO: handle case where there is only one ICAO
+                    //build an ICAO string with the one ICAO written out 3 times to get around the 3 ICAO min for this request
                 }
                 else
                 {
@@ -134,7 +138,9 @@ namespace FSEDataFeed
 
                 //submit the request
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-                
+
+                accessKeyHitCount++;
+
                 //deserialize the response
                 XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                 using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
@@ -148,7 +154,7 @@ namespace FSEDataFeed
             else
             {
                 //use static test data
-                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\ICAOJobsFrom-KAUS-KPDX.xml";
+                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\ICAOJobsFrom-KLBB.xml";
                 XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {

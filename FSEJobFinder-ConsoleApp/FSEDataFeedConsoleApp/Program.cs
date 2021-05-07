@@ -9,6 +9,7 @@ namespace FSEJobfinderConsoleApp
         //https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-160
         static void Main(string[] args)
         {
+            //TODO: move all of this into a menu
             Console.WriteLine("FSE Flight Planner" + Environment.NewLine);
             Console.WriteLine("Choose One Option:");
             Console.WriteLine("1: Best Available assignment for a Boeing 737-800");
@@ -17,6 +18,8 @@ namespace FSEJobfinderConsoleApp
             Console.WriteLine("4: Best Available assignment for a Boeing 747-400");
             Console.WriteLine("5: All 747 Assignments to or from the US");
             Console.WriteLine("6: All 747 Assignments");
+            Console.WriteLine("7: All A320 (MSFS) Assignments");
+            Console.WriteLine("8: All A320 (MSFS) Assignments to or from the US");
             Console.WriteLine(Environment.NewLine + "Type \"Exit\" or \"Q\" to quit.");
             Console.Write(Environment.NewLine + "Enter your choice: ");
 
@@ -84,6 +87,24 @@ namespace FSEJobfinderConsoleApp
                                 Console.WriteLine("Assignment: " + assignment.FromIcao + " to " + assignment.ToIcao + " - Pays: " + assignment.Pay);
                             }
                             break;
+                        case 7:
+                            //TODO: Test A320 jobs
+                            Console.WriteLine("Finding all Airbus A320 (MSFS) assignments...");
+                            foreach (Assignment assignment in fSEData.getCommercialAssignments(AircraftMakeModelStrEnum.AirbusA320_MSFS))
+                            {
+                                Console.WriteLine("Assignment: " + assignment.FromIcao + " to " + assignment.ToIcao + " - Pays: " + assignment.Pay);
+                            }
+                            break;
+                        case 8:
+                            //TODO: Test A320 jobs
+                            Console.WriteLine("Finding all Airbus A320 (MSFS) assignments that start in the US...");
+                            foreach (Assignment assignment in fSEData.GetUSAssignments(AircraftMakeModelStrEnum.AirbusA320_MSFS))
+                            {
+                                Console.WriteLine("Assignment: " + assignment.FromIcao + " to " + assignment.ToIcao + " - Pays: " + assignment.Pay);
+                            }
+                            break;
+
+
                         default:
                             //invalid input
                             Console.WriteLine("Invalid option selected, try a different option.");

@@ -33,55 +33,17 @@ namespace FSEDataFeed
             return result;
         }
 
-        //delete this garbage
-        public List<Assignment> get737Jobs()
+        public List<Assignment> getCommercialJobs(AircraftItems allAircraft)
         {
-
-            List<Assignment> results = new List<Assignment>();
-
-            foreach(Assignment assignment in Assignments)
-            {
-                //TODO: this is no longer a valid way to find 737 jobs
-                if(assignment.Commodity == "Pax - Airline Pilot for Hire")
-                {
-                    results.Add(assignment);
-                }
-            }
-            return results;
-        }
-
-        /// <summary>
-        /// Finds assignments that match with the given list of aircraft.
-        /// </summary>
-        /// <param name="all737Aircraft"></param>
-        /// <returns></returns>
-        public List<Assignment> get737Jobs(AircraftItems all737Aircraft)
-        {
-            List<Assignment> result = new List<Assignment>();
-
-            //loop over each assignment
-            foreach(Assignment assignment in Assignments)
-            {
-                //check to see if the aicraft in the assignment is in the list of 737s
-                if (all737Aircraft.AircraftList.Contains(new Aircraft(assignment.AircraftId)))
-                { 
-                    result.Add(assignment);
-                }
-            }
-
-            return result;
-        }
-
-        //TODO:refactor, this is the same as above method
-        public List<Assignment> get747Jobs(AircraftItems all747Aircraft)
-        {
+            //TODO: input validation to make sure we only got aircraft that can have commercial (aka All-In Reserved) flights
             List<Assignment> result = new List<Assignment>();
 
             //loop over each assignment
             foreach (Assignment assignment in Assignments)
             {
+                //if the assignment aicraft id is zero then its not an all in assignment and we can short circuit this so no obj has to be created
                 //check to see if the aicraft in the assignment is in the list of 737s
-                if (all747Aircraft.AircraftList.Contains(new Aircraft(assignment.AircraftId)))
+                if (allAircraft.AircraftList.Contains(new Aircraft(assignment.AircraftId)))
                 {
                     result.Add(assignment);
                 }

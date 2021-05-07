@@ -58,6 +58,9 @@
     <Content Include="StaticFiles\172TestFile.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="StaticFiles\AircraftItems_AirbusA320_MSFS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="StaticFiles\AircraftItems_737.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -71,13 +74,18 @@
     <Content Include="StaticFiles\ICAOJobsFrom-KAUS-KPDX.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="StaticFiles\ICAOJobsFrom-KLBB.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="StaticFiles\NEW_737.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="StaticFiles\RawICAOJobs.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="StaticFiles\UserKey.txt" />
+    <Content Include="StaticFiles\UserKey.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
