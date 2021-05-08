@@ -48,6 +48,8 @@
     <Compile Include="FSEDataAPI.cs" />
     <Compile Include="FSEDataExport.cs" />
     <Compile Include="FSEDataExportURLBuilder.cs" />
+    <Compile Include="FSEDataRequest.cs" />
+    <Compile Include="FSEDataRequestTracker.cs" />
     <Compile Include="IcaoJobsFrom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
