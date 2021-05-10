@@ -10,16 +10,19 @@ namespace FSEDataFeed
     /// <summary>
     /// 
     /// </summary>
-    class FSEDataRequestTracker
+    public class FSEDataRequestTracker
     {
         private List<FSEDataRequest> requests;
         private int firstWindowRequestLimit = 10;
         private int secondWindowRequestLimit = 40;
         private string requestsFileName = "FSEDataRequests.txt";
+        private string RequestsfilePath;
 
         public FSEDataRequestTracker()
         {
             requests = new List<FSEDataRequest>();
+
+            RequestsfilePath = Directory.GetCurrentDirectory() + "\\" + requestsFileName;
 
             //read in all of the previosuly saved requests
             LoadRequests();
@@ -79,19 +82,31 @@ namespace FSEDataFeed
         /// </summary>
         private void PruneRequests()
         {
-            throw new NotImplementedException("PruneRequests");
+            if(requests.Count != 0)
+            {
+                //start and end times for the second rolling window (40 hits in 6 hours)
+                DateTime end = DateTime.Now;
+                DateTime start = end.Subtract(TimeSpan.FromHours(6));
+
+                foreach (FSEDataRequest request in requests)
+                {
+                    if (!request.isInTimeWindow(start,end))
+                    {
+                        requests.Remove(request);
+                    }
+                }
+            }
         }
 
         /// <summary>
         /// Load any existing requests from previous program executions.
         /// </summary>
         private void LoadRequests()
-        {
-            string pathToRequestsFile = Directory.GetCurrentDirectory() + "\\" + requestsFileName;
+        {   
             //See if the file exists
-            if (File.Exists(pathToRequestsFile))
+            if (File.Exists(RequestsfilePath))
             {
-                string[] requestObjects = File.ReadAllLines(pathToRequestsFile);
+                string[] requestObjects = File.ReadAllLines(RequestsfilePath);
                 //read line by line
                 foreach(string requestObjectStr in requestObjects)
                 {
@@ -101,9 +116,21 @@ namespace FSEDataFeed
             }
         }
 
+        /// <summary>
+        /// Save the requests to a file
+        /// </summary>
         public void SaveRequests()
         {
-            throw new NotImplementedException("SaveRequests");
+            if (requests.Count > 0)
+            {
+                using (StreamWriter writer = new StreamWriter(RequestsfilePath, false))
+                {
+                    foreach(FSEDataRequest request in requests)
+                    {
+                        writer.WriteLine(request.ToString());
+                    }
+                }
+            }
         }
 
         /// <summary>
@@ -153,6 +180,8 @@ namespace FSEDataFeed
             {
                 foreach (FSEDataRequest request in requests)
                 {
+                    //TODO: refactor using the new request method for checking on time windows
+
                     //check to see if this request was fired off in the last 6 hours
                     if ((request.GetTimestamp() > start) && (request.GetTimestamp() < end))
                     {

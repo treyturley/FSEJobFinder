@@ -21,6 +21,7 @@ namespace FSEDataFeed
         private string userKey;
         private int accessKeyHitCount;
         private string FSEEndpoint;
+        private FSEDataRequestTracker requestTracker;
 
         //toggle between static debug data and live data
         bool debugEnabled;
@@ -37,6 +38,8 @@ namespace FSEDataFeed
             GetUserKey();
 
             FSEEndpoint = @"http://server.fseconomy.net/data?userkey=" + userKey + "&format=xml";
+
+            requestTracker = new FSEDataRequestTracker();
         }
 
         /// <summary>

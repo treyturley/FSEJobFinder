@@ -24,11 +24,11 @@ namespace FSEDataFeed.Tests
 
             FSEDataAPI fse = new FSEDataAPI();
             //TODO: make a better assert using a list of assignments that is then fed into the get best method
-            //TODO: make sure this is actually return the best and not the best minus or some shit due to index weirdness
+            //TODO: make sure this is actually return the best and not the best minus one due to index weirdness
             Assignment actualBestAssignment = fse.getBestCommercialAssignment(makeModel);
             string actualBestAssignmentLocation = actualBestAssignment.Location;
 
-            //TODO: fix this shitty assert            
+            //TODO: make this assert better          
             Assert.IsTrue(actualBestAssignmentLocation.Length == 4);
         }
 
