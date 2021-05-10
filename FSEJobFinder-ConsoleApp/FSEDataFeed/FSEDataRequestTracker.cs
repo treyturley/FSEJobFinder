@@ -191,5 +191,52 @@ namespace FSEDataFeed
             }
             return requestCount;
         }
+
+        // override object.Equals
+        public override bool Equals(object obj)
+        {
+           
+            if (obj == null || GetType() != obj.GetType())
+            {
+                return false;
+            }
+            
+            FSEDataRequestTracker objAsDataRequestTracker = obj as FSEDataRequestTracker;
+            if (objAsDataRequestTracker == null)
+            {
+                return false;
+            }
+
+            return Equals(objAsDataRequestTracker);
+        }
+
+        public bool Equals(FSEDataRequestTracker other)
+        {
+            bool result = true;
+            if(requests.Count == other.requests.Count)
+            {
+                //See if other contains the same requests
+                foreach (FSEDataRequest request in requests)
+                {
+                    if (!other.requests.Contains(request))
+                    {
+                        result = false;
+                    }
+                }
+            }
+            else
+            {
+                result = false;
+            }
+            return result;
+        }
+
+        // override object.GetHashCode
+        public override int GetHashCode()
+        {
+            // TODO: write your implementation of GetHashCode() here
+            throw new NotImplementedException();
+            return base.GetHashCode();
+        }
     }
 }
