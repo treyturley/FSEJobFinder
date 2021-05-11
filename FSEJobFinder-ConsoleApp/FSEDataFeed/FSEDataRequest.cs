@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Net;
 
 namespace FSEDataFeed
@@ -9,6 +10,9 @@ namespace FSEDataFeed
         private string url;
         private HttpWebRequest request;
         private FSEDataRequestType requestType;
+        private string serializedResponsePath;
+        private string requestQuery;
+        private string pathToResponse;
 
         /// <summary>
         /// Used to create a new FSEDataRequest with the timestamp set to the current time.
@@ -21,6 +25,7 @@ namespace FSEDataFeed
             request = (HttpWebRequest)WebRequest.Create(url);
             timeStamp = DateTime.Now;
             this.requestType = requestType;
+            setRequestQuery();
         }
 
 
@@ -30,7 +35,7 @@ namespace FSEDataFeed
             this.url = url;
             request = (HttpWebRequest)WebRequest.Create(url);
             this.timeStamp = timeStamp;
-
+            setRequestQuery();
         }
 
         public FSEDataRequest(string requestObjAsString)
@@ -38,17 +43,46 @@ namespace FSEDataFeed
             //split it into parts
             string[] objParts = requestObjAsString.Split(',');
 
-            //TODO: some validatio here could help incase the file get modifed outside of the program
+            //TODO: some validation here could help incase the file gets modifed outside of the program
 
             requestType = (FSEDataRequestType)Enum.Parse(typeof(FSEDataRequestType), objParts[0]);
-            url = objParts[1];
+            requestQuery = objParts[1];
+            url = objParts[2];
             request = (HttpWebRequest)WebRequest.Create(url);
-            timeStamp = DateTime.Parse(objParts[2]);
+            timeStamp = DateTime.Parse(objParts[3]);
+            pathToResponse = objParts[4];
+            
         }
 
         public HttpWebResponse GetResponse()
         {
+            //update the request timestamp to now because now we are actually getting a response from FSE
+            timeStamp = DateTime.Now;
             return (HttpWebResponse)request.GetResponse();
+        }
+
+        public string getResponseString()
+        {
+            string responseStr = "";
+
+            timeStamp = DateTime.Now;
+
+            //handle the response here so that we can close the connection/stream and free the connection up
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            {
+                //check for valid response
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    StreamReader reader = new StreamReader(response.GetResponseStream());
+                    responseStr = reader.ReadToEnd();
+                }
+                else
+                {
+                    //TODO: handle the case were the response is not what we expected
+                }
+                
+            }
+                return responseStr;
         }
 
         public string GetURL()
@@ -75,13 +109,32 @@ namespace FSEDataFeed
             return false;
         }
 
+        private void setRequestQuery()
+        {
+            if (url.Length != 0)
+            {
+                //try to split the url on the '&' signs and find the one starting with query
+                string[] splitURL = url.Split('&');
+
+                //the second string in the split should have the query
+                string queryString = splitURL[1];
+
+                if (queryString.StartsWith("query="))
+                {
+                    requestQuery = queryString;
+                }
+            }
+        }
+
         public override string ToString()
         {
             string result = "";
 
             result += requestType.ToString() + ",";
+            result += requestQuery + ",";
             result += url + ",";
             result += timeStamp.ToString();
+            result += pathToResponse + ",";
 
             return result;
         }
