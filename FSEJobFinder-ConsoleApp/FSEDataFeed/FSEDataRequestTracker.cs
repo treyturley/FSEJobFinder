@@ -234,9 +234,18 @@ namespace FSEDataFeed
         // override object.GetHashCode
         public override int GetHashCode()
         {
-            // TODO: write your implementation of GetHashCode() here
-            throw new NotImplementedException();
-            return base.GetHashCode();
+            //trying out a hashcode algorithm seen here: https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-overriding-gethashcode
+            unchecked
+            {
+                int hash = 17;
+                hash = hash * 23 + requests.GetHashCode();
+                hash = hash * 23 + firstWindowRequestLimit;
+                hash = hash * 23 + secondWindowRequestLimit;
+                hash = hash * 23 + requestsFileName.GetHashCode();
+                hash = hash * 23 + RequestsfilePath.GetHashCode();
+                
+                return hash;
+            }
         }
     }
 }
