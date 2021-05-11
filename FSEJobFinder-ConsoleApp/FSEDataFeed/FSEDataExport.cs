@@ -65,7 +65,7 @@ namespace FSEDataFeed
         }
 
         /// <summary>
-        /// Get all aircraft from FSE given the passed in make and model
+        /// Get all aircraft from FSE given the passed in make and model.
         /// </summary>
         /// <param name="makeModel">the airplane we want to query FSE for.</param>
         /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel</returns>
@@ -79,19 +79,38 @@ namespace FSEDataFeed
             {
                 string url = FSEEndpoint + @"&query=aircraft&search=makemodel&makemodel=" + makeModel;
 
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);                
+                //TODO: determine how long before this data is stale. Reference locally saved data instead where possible.
 
-                XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+                //TODO: Create unit test to test the new FSEDataRequests
+                FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
+                requestTracker.AddRequest(request);
 
-                accessKeyHitCount++;
-                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                using (Stream stream = response.GetResponseStream())                                
-                {                    
-                    aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+                //TODO: if we can make a request and a recent response for this make model doesnt exist, make a new request to FSE
+                if (requestTracker.CanMakeRequest())
+                {   
+                    //TODO: if the request tracker
+                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                    using (Stream stream = response.GetResponseStream())
+                    {
+                        aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+                    }
+
+                    //alternative way to get the aircraftItems using the FSEDataRequest without having to use resources
+                    //request.getResponseString();
+                    //aircraftItems = (AircraftItems)serializer.Deserialize(new StringReader(request.getResponseString()));
+
+                    //TODO: log the response so that it can be referenced later. or is there some built cache mechanism we can use?
+                }
+                else
+                {
+                    //TODO: need to handle the case were we cant make a request right now
                 }
 
                 //TODO: Log the AircraftItems to a file so we can just reference that in later calls instead of calling FSE
                 
+
+
             }
             else
             {
