@@ -1,12 +1,17 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
+using System.Threading;
 
 namespace FSEDataFeed.Tests
 {
     [TestClass]
     public class FSEDataRequestTrackerTests
     {
+        //these URLs dont have a valid key so they wont work in a real request to FSEData API. For testing only!
+        const string SAMPLE_VALID_MAKEMODEL_URL = @"https://server.fseconomy.net/data?userkey=TheUserKey&format=xml&query=aircraft&search=makemodel&makemodel=Cessna 172 Skyhawk";
+        const string SAMPLE_VALID_ICAOJOBSFROM_URL = @"https://server.fseconomy.net/data?userkey=TheUserKey&format=xml&query=icao&search=jobsfrom&icaos=KAUS-KDFW-KIAH";
+
         [TestMethod]
         public void SaveRequestsTest()
         {   
@@ -43,6 +48,17 @@ namespace FSEDataFeed.Tests
 
             //see if the request trackers are the same
             Assert.IsTrue(requests.Equals(loggedRequests));
+        }
+
+        [TestMethod]
+        public void GetOldestRequestDateTest()
+        {
+            FSEDataRequestTracker requests = new FSEDataRequestTracker();
+            requests.AddRequest(new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, SAMPLE_VALID_MAKEMODEL_URL));
+            Thread.Sleep(1000);
+            requests.AddRequest(new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, SAMPLE_VALID_ICAOJOBSFROM_URL));
+
+            Assert.IsTrue(requests.GetOldestRequest().GetRequestType().Equals(FSEDataRequestType.Aircraft_By_MakeModel));
         }
     }
 }
