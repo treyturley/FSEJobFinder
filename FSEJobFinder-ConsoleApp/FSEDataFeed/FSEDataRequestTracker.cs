@@ -63,17 +63,19 @@ namespace FSEDataFeed
 
             if (!CanMakeRequest())
             {
-                //calculate how long we have to wait until we can make another request
+                //see which limit we hit
 
-                //see if we hit the cap for the second window (40 requests in 6 hours)
+                //TODO: instead of just saying we ahve to wait the full limit,
+                //calculate when the oldest request will roll out of the window and return how long until that happens
                 if(RequestsInSecondWindow() == secondWindowRequestLimit)
                 {
-
+                    return TimeSpan.FromHours(6);
                 }
-
+                else if (RequestsInFirstWindow() == firstWindowRequestLimit)
+                {
+                    return TimeSpan.FromMinutes(10);
+                }
             }
-
-
             return nextRequestTime;
         }
 
@@ -190,6 +192,23 @@ namespace FSEDataFeed
                 }
             }
             return requestCount;
+        }
+
+        public FSEDataRequest GetOldestRequest()
+        {
+            DateTime oldestDateTime = DateTime.Now;
+            FSEDataRequest oldestRequest = null;
+
+            foreach(FSEDataRequest request in requests)
+            {
+                if(request.GetTimestamp().CompareTo(oldestDateTime) < 0)
+                {
+                    oldestRequest = request;
+                    oldestDateTime = oldestRequest.GetTimestamp();
+                }
+            }
+
+            return oldestRequest;
         }
 
         // override object.Equals
