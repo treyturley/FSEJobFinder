@@ -4,8 +4,17 @@ using System.Net;
 
 namespace FSEDataFeed
 {
-    public class FSEDataRequest
+    public class FSEDataRequest : IEquatable<FSEDataRequest>, IComparable<FSEDataRequest>
     {
+
+        //all FSE Request URLs have Query strings. When we split it up, there will always be atleast 3 key value pairs in the query string
+        //The part we are most interested in is everything after "query="
+        //Sample URL: https://server.fseconomy.net/data?userkey=TheUserKey&format=xml&query=aircraft&search=configs
+        private const int MIN_QUERY_STRINGS = 3; 
+        
+        //We are mostly interested in everything after "Query=". When we split a full URL on '&' this Query part will start at index 2
+        private const int QUERY_STARTING_INDEX = 2;
+
         private DateTime timeStamp;
         private string url;
         private HttpWebRequest request;
@@ -113,16 +122,49 @@ namespace FSEDataFeed
         {
             if (url.Length != 0)
             {
-                //try to split the url on the '&' signs and find the one starting with query
-                string[] splitURL = url.Split('&');
+                //try to split the url on the '&' signs
+                string[] urlParts = url.Split('&');
 
-                //the second string in the split should have the query
-                string queryString = splitURL[1];
-
-                if (queryString.StartsWith("query="))
+                //after splitting we should have atleast 3 parts. the query starts in the third part and goes to the end of the URL
+                //TODO: deal with this magic number
+                if(urlParts.Length < MIN_QUERY_STRINGS)
                 {
-                    requestQuery = queryString;
+                    //we have an invalid URL
+                    throw new Exception("Error processing URL: Invalid URL, too short");
                 }
+
+                string queryStr = "";
+
+                for(int i = QUERY_STARTING_INDEX; i<urlParts.Length; i++)
+                {
+                    //validate that the first part from the URL contains "Query=" indicating we have a valid FSEDataExport URL
+                    if (i == QUERY_STARTING_INDEX)
+                    {
+                        if(urlParts[i].StartsWith("Query="))
+                        {
+                            //we have a problem
+                            throw new Exception("Error processing URL: Invalid query string.");
+                        }
+                        queryStr += urlParts[i];
+                        queryStr += "&";
+                    }
+                    else
+                    {
+                        //just add this part of the query String
+                        queryStr += urlParts[i];
+
+                        //if this isnt the last part of the query string, add the '&' back into to preserve the full query string
+                        if(i < (urlParts.Length - 1))
+                        {
+                            queryStr += "&";
+                        }
+                    }
+                }
+                requestQuery = queryStr;
+            }
+            else
+            {
+                throw new Exception("Error processing URL: URL is empty");
             }
         }
 
@@ -196,6 +238,31 @@ namespace FSEDataFeed
             return this.url.GetHashCode();
         }
 
+        public int CompareTo(FSEDataRequest other)
+        {
+            if (requestType == other.requestType)
+            {
+                if(requestQuery.CompareTo(other.requestQuery) == 0)
+                {
+                    if (timeStamp.CompareTo(other.timeStamp) == 0)
+                    {
+                        return 0;
+                    }
+                    else
+                    {
+                        return timeStamp.CompareTo(other.timeStamp);
+                    }
+                }
+                else
+                {
+                    return requestQuery.CompareTo(other.requestQuery);
+                }
+            }
+            else
+            {
+                return requestType.CompareTo(other.requestType);
+            }
+        }
     }
 
     public enum FSEDataRequestType
