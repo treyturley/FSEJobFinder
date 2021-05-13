@@ -13,7 +13,7 @@ namespace FSEDataFeed.Tests
         const string SAMPLE_VALID_ICAOJOBSFROM_URL = @"https://server.fseconomy.net/data?userkey=TheUserKey&format=xml&query=icao&search=jobsfrom&icaos=KAUS-KDFW-KIAH";
 
         [TestMethod]
-        public void SaveRequestsTest()
+        public void SaveRequests_LoadRequests_Success()
         {   
             string requestsFileName = "FSEDataRequests.txt";
             string RequestsfilePath = Directory.GetCurrentDirectory() + "\\" + requestsFileName;
@@ -32,12 +32,9 @@ namespace FSEDataFeed.Tests
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, "http://localhost/TestMakeModelURL"));
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, "http://localhost/TestICAOJobsFromURL"));
 
-            Console.Error.WriteLine(requests.ToString());
-            Console.WriteLine(requests.ToString());
-
             requests.SaveRequests();
 
-            //read the requests
+            //create a new request tracker that will read in the saved requests
             FSEDataRequestTracker loggedRequests = new FSEDataRequestTracker();
 
             //test to see if each request we saved was found in the file
@@ -51,14 +48,19 @@ namespace FSEDataFeed.Tests
         }
 
         [TestMethod]
-        public void GetOldestRequestDateTest()
+        public void GetOldestRequest_ReturnsCorrectResult()
         {
+            //in this setup the Aircraft_By_MakeModel request is the older of the two requests
+            FSEDataRequestType OLDEST_REQUEST_TYPE = FSEDataRequestType.Aircraft_By_MakeModel;
+
+
             FSEDataRequestTracker requests = new FSEDataRequestTracker();
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, SAMPLE_VALID_MAKEMODEL_URL));
             Thread.Sleep(1000);
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, SAMPLE_VALID_ICAOJOBSFROM_URL));
 
-            Assert.IsTrue(requests.GetOldestRequest().GetRequestType().Equals(FSEDataRequestType.Aircraft_By_MakeModel));
+
+            Assert.IsTrue(requests.GetOldestRequest().GetRequestType().Equals(OLDEST_REQUEST_TYPE));
         }
     }
 }
