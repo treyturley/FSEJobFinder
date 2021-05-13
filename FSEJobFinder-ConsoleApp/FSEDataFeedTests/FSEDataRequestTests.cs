@@ -1,6 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
+//introduction to unit testing can be found here: https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2019
+
 namespace FSEDataFeed.Tests
 {
     [TestClass]
