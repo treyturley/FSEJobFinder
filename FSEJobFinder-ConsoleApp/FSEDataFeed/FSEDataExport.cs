@@ -73,7 +73,6 @@ namespace FSEDataFeed
         {
             //TODO: If we have recently made a requests to get the AircraftItems for this MakeModel, 
             //just return that data instead of call FSE again
-
             AircraftItems aircraftItems = null;
             if (!debugEnabled)
             {
@@ -100,17 +99,13 @@ namespace FSEDataFeed
                     //request.getResponseString();
                     //aircraftItems = (AircraftItems)serializer.Deserialize(new StringReader(request.getResponseString()));
 
-                    //TODO: log the response so that it can be referenced later. or is there some built cache mechanism we can use?
+                    //TODO: log the response so that it can be referenced later.
                 }
                 else
                 {
                     //TODO: need to handle the case were we cant make a request right now
+                    //for now we will just return null in aircraftItems
                 }
-
-                //TODO: Log the AircraftItems to a file so we can just reference that in later calls instead of calling FSE
-                
-
-
             }
             else
             {
@@ -128,7 +123,7 @@ namespace FSEDataFeed
         public IcaoJobsFrom GetIcaoJobsFrom(List<string> ICAOs)
         {
             //TODO: name this better. its really a list of all of the assignments that start at one of the ICAOs in the passed in list.
-            IcaoJobsFrom allICAOWithJobs = null;
+            IcaoJobsFrom availableJobs = null;
 
             if (!debugEnabled)
             {   
@@ -158,20 +153,19 @@ namespace FSEDataFeed
                 //build the request string with all of the icao
                 string url = FSEEndpoint + @"&format=xml&query=icao&search=jobsfrom&icaos=" + allICAOs;
 
-                //submit the request
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+                FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
+                requestTracker.AddRequest(request);
 
-                accessKeyHitCount++;
-
-                //deserialize the response
-                XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
-                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                using (Stream stream = response.GetResponseStream())
-                {
-                    allICAOWithJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+                //if we can make a request right now
+                if (requestTracker.CanMakeRequest())
+                {   
+                    XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                    using (Stream stream = response.GetResponseStream())
+                    {
+                        availableJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+                    }
                 }
-                
-
             }
             else
             {
@@ -180,11 +174,10 @@ namespace FSEDataFeed
                 XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {
-                    allICAOWithJobs = (IcaoJobsFrom)serializer.Deserialize(fileStream);
+                    availableJobs = (IcaoJobsFrom)serializer.Deserialize(fileStream);
                 }                
             }
-
-            return allICAOWithJobs;
+            return availableJobs;
         }
     }
 }
