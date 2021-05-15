@@ -19,9 +19,10 @@ namespace FSEDataFeed
     public class FSEDataExport  
     {   
         private string userKey;
-        private int accessKeyHitCount;
         private string FSEEndpoint;
-        private FSEDataRequestTracker requestTracker;
+
+        //TODO: having the request tracker at this level means we never add up all of the requests, it must go in FSEDataAPI
+        public FSEDataRequestTracker requestTracker;
 
         //toggle between static debug data and live data
         bool debugEnabled;
@@ -38,7 +39,7 @@ namespace FSEDataFeed
             GetUserKey();
 
             FSEEndpoint = @"http://server.fseconomy.net/data?userkey=" + userKey + "&format=xml";
-
+            
             requestTracker = new FSEDataRequestTracker();
         }
 
@@ -68,43 +69,36 @@ namespace FSEDataFeed
         /// Get all aircraft from FSE given the passed in make and model.
         /// </summary>
         /// <param name="makeModel">the airplane we want to query FSE for.</param>
-        /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel</returns>
+        /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel. An empty list if there are no aircraft. Null if there was an error.</returns>
         public  AircraftItems GetAircraftByMakeModel(string makeModel)
         {
+            AircraftItems aircraftItems = null;
+
             //TODO: If we have recently made a requests to get the AircraftItems for this MakeModel, 
             //just return that data instead of call FSE again
-            AircraftItems aircraftItems = null;
+
             if (!debugEnabled)
             {
+                //TODO: We could use a constant for the query string here
                 string url = FSEEndpoint + @"&query=aircraft&search=makemodel&makemodel=" + makeModel;
 
-                //TODO: determine how long before this data is stale. Reference locally saved data instead where possible.
-
-                //TODO: Create unit test to test the new FSEDataRequests
-                FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
-                requestTracker.AddRequest(request);
-
-                //TODO: if we can make a request and a recent response for this make model doesnt exist, make a new request to FSE
+                //if we can make a request and a recent response for this make model doesnt exist, make a new request to FSE
                 if (requestTracker.CanMakeRequest())
-                {   
-                    //TODO: if the request tracker
+                {
+                    FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
+                    requestTracker.AddRequest(request);
+                    
                     XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
                     using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                     using (Stream stream = response.GetResponseStream())
                     {
                         aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+
+                        //since we got a response and were able to deserialize it, lets log it
+                        requestTracker.SaveRequest(request);
                     }
 
-                    //alternative way to get the aircraftItems using the FSEDataRequest without having to use resources
-                    //request.getResponseString();
-                    //aircraftItems = (AircraftItems)serializer.Deserialize(new StringReader(request.getResponseString()));
-
-                    //TODO: log the response so that it can be referenced later.
-                }
-                else
-                {
-                    //TODO: need to handle the case were we cant make a request right now
-                    //for now we will just return null in aircraftItems
+                    //TODO: logging for the response could go here
                 }
             }
             else
@@ -150,20 +144,23 @@ namespace FSEDataFeed
                     allICAOs = allICAOs.Substring(0, allICAOs.Length - 1);
                 }
 
-                //build the request string with all of the icao
-                string url = FSEEndpoint + @"&format=xml&query=icao&search=jobsfrom&icaos=" + allICAOs;
-
-                FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
-                requestTracker.AddRequest(request);
-
                 //if we can make a request right now
                 if (requestTracker.CanMakeRequest())
-                {   
+                {
+                    //build the request string with all of the icao
+                    //TODO: We could use a constant for the query string here
+                    string url = FSEEndpoint + @"&query=icao&search=jobsfrom&icaos=" + allICAOs;
+
+                    FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, url);
+                    requestTracker.AddRequest(request);
+
                     XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                     using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                     using (Stream stream = response.GetResponseStream())
                     {
                         availableJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+                        //since we got a response and were able to deserialize it, lets log it
+                        requestTracker.SaveRequest(request);
                     }
                 }
             }
