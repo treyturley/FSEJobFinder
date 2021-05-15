@@ -42,7 +42,7 @@ namespace FSEDataFeed
             foreach (Assignment assignment in Assignments)
             {
                 //if the assignment aicraft id is zero then its not an all in assignment and we can short circuit this so no obj has to be created
-                //check to see if the aicraft in the assignment is in the list of 737s
+                //check to see if the aicraft in the assignment is in the list of aircraft that were passed in
                 if (allAircraft.AircraftList.Contains(new Aircraft(assignment.AircraftId)))
                 {
                     result.Add(assignment);

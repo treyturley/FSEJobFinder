@@ -25,6 +25,8 @@ namespace FSEDataFeed
 
         List<IcaoJobsFrom> ICAOWithAssignments;
 
+        private FSEDataExport fseDataExport;
+
         /// <summary>
         /// Constructor for FSEDataAPI
         /// This class interacts with the FSE Data API provided by FSEconomey.net to get
@@ -40,6 +42,9 @@ namespace FSEDataFeed
 
             //TODO: populate each list with the respective data
             GetAircraftItems(AircraftMakeModelStrEnum.Boeing737_800);
+
+            fseDataExport = new FSEDataExport();
+
         }
 
         /// <summary>
@@ -138,50 +143,48 @@ namespace FSEDataFeed
             return result;
         }
 
-        private static List<Assignment> getAllCommercialAssignments(string makeModel)
+        private List<Assignment> getAllCommercialAssignments(string makeModel)
         {
             //TODO: input validation on makeModel, must only be makemodesl that have "commercial flights" aka assigned All-In assignments"
             //TODO: Make this return a assignment object?                     
+            List<Assignment> availableAssignments = new List<Assignment>();
 
-            //Get the current list of all aicraft that match the Make and Model - Query FSE Data Feed'
-            FSEDataExport fseData = new FSEDataExport();
-            AircraftItems allAircraft = fseData.GetAircraftByMakeModel(makeModel);
-
-
-
-
-            //build the list of ICAO that have the plane we want
-            List<string> AirportsWithMatchingPlane = new List<string>();
-            foreach (Aircraft aircraft in allAircraft.AircraftList)
+            if (fseDataExport.requestTracker.remainingRequests() >= 2)
             {
-                //make sure the plane is not rented and is at a valid location
-                //TODO: if we want to filter by locations we could do that here?
-                if (aircraft.RentedBy.CompareTo("Not rented.") == 0 && aircraft.Location.Length == 4)
+                //Get the current list of all aicraft that match the Make and Model - Query FSE Data Feed'
+                AircraftItems allAircraft = fseDataExport.GetAircraftByMakeModel(makeModel);
+
+                //build the list of ICAO that have the plane we want
+                List<string> AirportsWithMatchingPlane = new List<string>();
+                foreach (Aircraft aircraft in allAircraft.AircraftList)
                 {
-                    AirportsWithMatchingPlane.Add(aircraft.Location);
+                    //make sure the plane is not rented and is at a valid location
+                    //TODO: if we want to filter by locations we could do that here?
+                    if (aircraft.RentedBy.CompareTo("Not rented.") == 0 && aircraft.Location.Length == 4)
+                    {
+                        AirportsWithMatchingPlane.Add(aircraft.Location);
+                    }
+                    /* if a plane doest have 4 letters in the location then that plane is currently rented and/or flying
+                    else
+                    {
+                        System.Console.WriteLine("plane has a location with only 3 letters in the icao: " + aircraft.Registration);
+                    }
+                    */
                 }
-                /* if a plane doest have 4 letters in the location then that plane is currently rented and/or flying
+
+                //Query FSE Data Feed for list of jobs from each ICAO that has makeModel - query = ICAO Jobs From            
+                IcaoJobsFrom ICAOAssignments = fseDataExport.GetIcaoJobsFrom(AirportsWithMatchingPlane);
+                
+                if (ICAOAssignments == null)
+                {
+                    //there was some issue with getting the assignments
+                    //TODO: Handle this gracefully
+                    throw new Exception("Unable to retrieve assignments");
+                }
                 else
                 {
-                    System.Console.WriteLine("plane has a location with only 3 letters in the icao: " + aircraft.Registration);
+                    availableAssignments = ICAOAssignments.getCommercialJobs(allAircraft);
                 }
-                */
-            }
-
-            //Query FSE Data Feed for list of jobs from each ICAO that has makeModel - query = ICAO Jobs From            
-            IcaoJobsFrom ICAOAssignments = fseData.GetIcaoJobsFrom(AirportsWithMatchingPlane);
-
-            
-            List<Assignment> availableAssignments = new List<Assignment>();
-            if (ICAOAssignments == null)
-            {
-                //there was some issue with getting the assignments
-                //TODO: Handle this gracefully
-                throw new Exception("Unable to retrieve assignments");
-            }
-            else
-            {
-                availableAssignments = ICAOAssignments.getCommercialJobs(allAircraft);
             }
 
             //TODO: refactor this so we dont need to use an if statement on the madeModel. This should be handled with inheritance             

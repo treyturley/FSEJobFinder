@@ -19,8 +19,10 @@ namespace FSEDataFeed
     public class FSEDataExport  
     {   
         private string userKey;
-        private int accessKeyHitCount;
         private string FSEEndpoint;
+
+        //TODO: having the request tracker at this level means we never add up all of the requests, it must go in FSEDataAPI
+        public FSEDataRequestTracker requestTracker;
 
         //toggle between static debug data and live data
         bool debugEnabled;
@@ -37,6 +39,8 @@ namespace FSEDataFeed
             GetUserKey();
 
             FSEEndpoint = @"http://server.fseconomy.net/data?userkey=" + userKey + "&format=xml";
+            
+            requestTracker = new FSEDataRequestTracker();
         }
 
         /// <summary>
@@ -62,33 +66,40 @@ namespace FSEDataFeed
         }
 
         /// <summary>
-        /// Get all aircraft from FSE given the passed in make and model
+        /// Get all aircraft from FSE given the passed in make and model.
         /// </summary>
         /// <param name="makeModel">the airplane we want to query FSE for.</param>
-        /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel</returns>
+        /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel. An empty list if there are no aircraft. Null if there was an error.</returns>
         public  AircraftItems GetAircraftByMakeModel(string makeModel)
         {
+            AircraftItems aircraftItems = null;
+
             //TODO: If we have recently made a requests to get the AircraftItems for this MakeModel, 
             //just return that data instead of call FSE again
 
-            AircraftItems aircraftItems = null;
             if (!debugEnabled)
             {
+                //TODO: We could use a constant for the query string here
                 string url = FSEEndpoint + @"&query=aircraft&search=makemodel&makemodel=" + makeModel;
 
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);                
+                //if we can make a request and a recent response for this make model doesnt exist, make a new request to FSE
+                if (requestTracker.CanMakeRequest())
+                {
+                    FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
+                    requestTracker.AddRequest(request);
+                    
+                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                    using (Stream stream = response.GetResponseStream())
+                    {
+                        aircraftItems = (AircraftItems)serializer.Deserialize(stream);
 
-                XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+                        //since we got a response and were able to deserialize it, lets log it
+                        requestTracker.SaveRequest(request);
+                    }
 
-                accessKeyHitCount++;
-                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                using (Stream stream = response.GetResponseStream())                                
-                {                    
-                    aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+                    //TODO: logging for the response could go here
                 }
-
-                //TODO: Log the AircraftItems to a file so we can just reference that in later calls instead of calling FSE
-                
             }
             else
             {
@@ -106,7 +117,7 @@ namespace FSEDataFeed
         public IcaoJobsFrom GetIcaoJobsFrom(List<string> ICAOs)
         {
             //TODO: name this better. its really a list of all of the assignments that start at one of the ICAOs in the passed in list.
-            IcaoJobsFrom allICAOWithJobs = null;
+            IcaoJobsFrom availableJobs = null;
 
             if (!debugEnabled)
             {   
@@ -133,23 +144,25 @@ namespace FSEDataFeed
                     allICAOs = allICAOs.Substring(0, allICAOs.Length - 1);
                 }
 
-                //build the request string with all of the icao
-                string url = FSEEndpoint + @"&format=xml&query=icao&search=jobsfrom&icaos=" + allICAOs;
-
-                //submit the request
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
-
-                accessKeyHitCount++;
-
-                //deserialize the response
-                XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
-                using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                using (Stream stream = response.GetResponseStream())
+                //if we can make a request right now
+                if (requestTracker.CanMakeRequest())
                 {
-                    allICAOWithJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
-                }
-                
+                    //build the request string with all of the icao
+                    //TODO: We could use a constant for the query string here
+                    string url = FSEEndpoint + @"&query=icao&search=jobsfrom&icaos=" + allICAOs;
 
+                    FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, url);
+                    requestTracker.AddRequest(request);
+
+                    XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                    using (Stream stream = response.GetResponseStream())
+                    {
+                        availableJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+                        //since we got a response and were able to deserialize it, lets log it
+                        requestTracker.SaveRequest(request);
+                    }
+                }
             }
             else
             {
@@ -158,11 +171,10 @@ namespace FSEDataFeed
                 XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {
-                    allICAOWithJobs = (IcaoJobsFrom)serializer.Deserialize(fileStream);
+                    availableJobs = (IcaoJobsFrom)serializer.Deserialize(fileStream);
                 }                
             }
-
-            return allICAOWithJobs;
+            return availableJobs;
         }
     }
 }
