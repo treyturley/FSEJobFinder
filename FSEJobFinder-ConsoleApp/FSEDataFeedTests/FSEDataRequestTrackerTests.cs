@@ -32,7 +32,10 @@ namespace FSEDataFeed.Tests
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, "http://localhost/TestMakeModelURL"));
             requests.AddRequest(new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, "http://localhost/TestICAOJobsFromURL"));
 
-            requests.SaveRequests();
+            foreach (FSEDataRequest request in requests.getRequests())
+            {
+                requests.SaveRequest(request);
+            }
 
             //create a new request tracker that will read in the saved requests
             FSEDataRequestTracker loggedRequests = new FSEDataRequestTracker();
