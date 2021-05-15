@@ -21,7 +21,6 @@ namespace FSEDataFeed
         private FSEDataRequestType requestType;
         private string serializedResponsePath;
         private string requestQuery;
-        private string pathToResponse;
 
         /// <summary>
         /// Used to create a new FSEDataRequest with the timestamp set to the current time.
@@ -55,12 +54,11 @@ namespace FSEDataFeed
             //TODO: some validation here could help incase the file gets modifed outside of the program
 
             requestType = (FSEDataRequestType)Enum.Parse(typeof(FSEDataRequestType), objParts[0]);
-            requestQuery = objParts[1];
-            url = objParts[2];
+            //requestQuery = objParts[1];
+            url = objParts[1];
+            timeStamp = DateTime.Parse(objParts[2]);
             request = (HttpWebRequest)WebRequest.Create(url);
-            timeStamp = DateTime.Parse(objParts[3]);
-            pathToResponse = objParts[4];
-            
+            setRequestQuery();
         }
 
         public HttpWebResponse GetResponse()
@@ -140,7 +138,7 @@ namespace FSEDataFeed
                     //validate that the first part from the URL contains "Query=" indicating we have a valid FSEDataExport URL
                     if (i == QUERY_STARTING_INDEX)
                     {
-                        if(urlParts[i].StartsWith("Query="))
+                        if(!urlParts[i].ToLower().StartsWith("query="))
                         {
                             //we have a problem
                             throw new Exception("Error processing URL: Invalid query string.");
@@ -173,10 +171,9 @@ namespace FSEDataFeed
             string result = "";
 
             result += requestType.ToString() + ",";
-            result += requestQuery + ",";
+            //result += requestQuery + ",";
             result += url + ",";
             result += timeStamp.ToString();
-            result += pathToResponse + ",";
 
             return result;
         }
