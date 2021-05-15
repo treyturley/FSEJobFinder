@@ -13,8 +13,8 @@ namespace FSEDataFeed
     public class FSEDataRequestTracker
     {
         private List<FSEDataRequest> requests;
-        private int firstWindowRequestLimit = 10;
-        private int secondWindowRequestLimit = 40;
+        private const int SMALL_WINDOW_LIMIT = 10;
+        private const int BIG_WINDOW_LIMIT = 40;
         private string requestsFileName = "FSEDataRequests.txt";
         private string RequestsfilePath;
 
@@ -50,11 +50,28 @@ namespace FSEDataFeed
         {
             //if we have less than 40 requests in the last 6 hours and less than 10 requests 
             //in the last 60 seconds then we can make another requests           
-            if(RequestsInSecondWindow() < secondWindowRequestLimit && RequestsInFirstWindow() < firstWindowRequestLimit)
+            if(RequestsInSecondWindow() < BIG_WINDOW_LIMIT && RequestsInFirstWindow() < SMALL_WINDOW_LIMIT)
             {
                 return true;
             }
             return false;
+        }
+
+        public int remainingRequests()
+        {
+            int result = 0;
+
+            if (CanMakeRequest())
+            {
+                //check to see which window has the smaller number of available requests
+                int bigWindow, smallWindow = 0;
+
+                bigWindow = BIG_WINDOW_LIMIT - RequestsInSecondWindow();
+                smallWindow = SMALL_WINDOW_LIMIT - RequestsInFirstWindow();
+                return Math.Min(bigWindow, smallWindow);
+            }
+
+            return result;
         }
 
         public TimeSpan TimeUntilNextRequest()
@@ -67,11 +84,11 @@ namespace FSEDataFeed
 
                 //TODO: instead of just saying we ahve to wait the full limit,
                 //calculate when the oldest request will roll out of the window and return how long until that happens
-                if(RequestsInSecondWindow() == secondWindowRequestLimit)
+                if(RequestsInSecondWindow() == BIG_WINDOW_LIMIT)
                 {
                     return TimeSpan.FromHours(6);
                 }
-                else if (RequestsInFirstWindow() == firstWindowRequestLimit)
+                else if (RequestsInFirstWindow() == SMALL_WINDOW_LIMIT)
                 {
                     return TimeSpan.FromMinutes(10);
                 }
@@ -118,20 +135,11 @@ namespace FSEDataFeed
             }
         }
 
-        /// <summary>
-        /// Save the requests to a file
-        /// </summary>
-        public void SaveRequests()
+        public void SaveRequest(FSEDataRequest request)
         {
-            if (requests.Count > 0)
-            {
-                using (StreamWriter writer = new StreamWriter(RequestsfilePath, false))
-                {
-                    foreach(FSEDataRequest request in requests)
-                    {
-                        writer.WriteLine(request.ToString());
-                    }
-                }
+            using (StreamWriter writer = new StreamWriter(RequestsfilePath, true))
+            {   
+                writer.WriteLine(request.ToString());
             }
         }
 
@@ -258,8 +266,8 @@ namespace FSEDataFeed
             {
                 int hash = 17;
                 hash = hash * 23 + requests.GetHashCode();
-                hash = hash * 23 + firstWindowRequestLimit;
-                hash = hash * 23 + secondWindowRequestLimit;
+                hash = hash * 23 + SMALL_WINDOW_LIMIT;
+                hash = hash * 23 + BIG_WINDOW_LIMIT;
                 hash = hash * 23 + requestsFileName.GetHashCode();
                 hash = hash * 23 + RequestsfilePath.GetHashCode();
                 
