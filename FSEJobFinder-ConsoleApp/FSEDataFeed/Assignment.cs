@@ -89,7 +89,11 @@ namespace FSEDataFeed
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            string result = "";
+
+            result += "Assignment: " + FromIcao + " to " + ToIcao + " - Pays: " + Pay;
+
+            return result;
         }
     }
 }
