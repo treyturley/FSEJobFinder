@@ -1,0 +1,184 @@
+<AircraftItems>
+	<Aircraft>
+		<SerialNumber>38727</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>C-FGGB</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KDCA</Location>
+		<LocationName>Ronald Reagan Washington Natl, Washington, Virginia, United States</LocationName>
+		<Home>CYVR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.19</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>560:29</AirframeTime>
+		<EngineTime>560:29</EngineTime>
+		<TimeLast100hr>54:33</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38750</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>N-844SH</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KIND</Location>
+		<LocationName>Indianapolis Intl, Indianapolis, Indiana, United States</LocationName>
+		<Home>KORD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>564:32</AirframeTime>
+		<EngineTime>564:32</EngineTime>
+		<TimeLast100hr>54:43</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38751</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>ET-RFD</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KDTW</Location>
+		<LocationName>Detroit Metro Wayne Co, Detroit, Michigan, United States</LocationName>
+		<Home>HAAB</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>46840.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.56</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>124:34</AirframeTime>
+		<EngineTime>124:34</EngineTime>
+		<TimeLast100hr>24:20</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>468.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38762</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>N-366LE</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KBOS</Location>
+		<LocationName>Logan Intl, Boston, Massachusetts, United States</LocationName>
+		<Home>KHOU</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.25</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>504:49</AirframeTime>
+		<EngineTime>504:49</EngineTime>
+		<TimeLast100hr>97:51</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38785</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>SU-HCX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>CYXE</Location>
+		<LocationName>Saskatoon/Diefenbaker Intl, Saskatoon, Saskatchewan, Canada</LocationName>
+		<Home>HECW</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>20013.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.13</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>252:19</AirframeTime>
+		<EngineTime>252:19</EngineTime>
+		<TimeLast100hr>50:29</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>200.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38788</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>N-089RG</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMUN</Location>
+		<LocationName>Cancun Intl, Cancun, Mexico</LocationName>
+		<Home>KLAS</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.27</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>389:32</AirframeTime>
+		<EngineTime>389:32</EngineTime>
+		<TimeLast100hr>86:43</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>38789</SerialNumber>
+		<MakeModel>Boeing 737-800</MakeModel>
+		<Registration>LQ-BYY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMCU</Location>
+		<LocationName>Gen Div P A Roberto Fierro, Chihuahua, Mexico</LocationName>
+		<Home>SASA</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>25200</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>455:17</AirframeTime>
+		<EngineTime>455:17</EngineTime>
+		<TimeLast100hr>48:16</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+</AircraftItems>

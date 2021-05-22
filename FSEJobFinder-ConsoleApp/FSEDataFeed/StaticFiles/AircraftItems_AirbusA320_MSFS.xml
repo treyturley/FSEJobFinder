@@ -1,0 +1,2628 @@
+<AircraftItems xmlns="https://server.fseconomy.net" xmlns:xsi="httsp://www.w3.org/2001/XMLSchema-instance" xmlns:schemaLocation="https://server.fseconomy.net/static/xsd/datafeed_aircraft.xsd" query="AircraftByMakeModel" total="101">
+	<Aircraft>
+		<SerialNumber>47840</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>XC-KPX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KLBB</Location>
+		<LocationName>Lubbock Intl, Lubbock, Texas, United States</LocationName>
+		<Home>MMMZ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>31505.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.22</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>197:35</AirframeTime>
+		<EngineTime>197:35</EngineTime>
+		<TimeLast100hr>96:44</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>322.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47841</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>7O-PLP</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>FYWH</Location>
+		<LocationName>Hosea Kutako Intl, Windhoek, Namibia</LocationName>
+		<Home>OYBS</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>13938.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.02</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>281:14</AirframeTime>
+		<EngineTime>281:14</EngineTime>
+		<TimeLast100hr>78:32</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>144.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47842</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>PK-YEX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LIEE</Location>
+		<LocationName>Elmas Mil, Cagliari, Italy</LocationName>
+		<Home>WAMR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>36528.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>RPoirier</RentedBy>
+		<FuelPct>0.05</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>173:40</AirframeTime>
+		<EngineTime>173:40</EngineTime>
+		<TimeLast100hr>72:00</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>372.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47843</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-15560</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBFI</Location>
+		<LocationName>Cataratas Intl, Foz Do Iguacu, Brazil</LocationName>
+		<Home>KWAL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>19424.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.30</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>255:07</AirframeTime>
+		<EngineTime>255:07</EngineTime>
+		<TimeLast100hr>51:04</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>194.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47844</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>VT-CCK</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LIPH</Location>
+		<LocationName>S.Angelo Mil, Treviso, Italy</LocationName>
+		<Home>VISA</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>4395.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.03</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>326:41</AirframeTime>
+		<EngineTime>326:41</EngineTime>
+		<TimeLast100hr>23:44</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>44.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47845</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-23112</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MDLR</Location>
+		<LocationName>Casa De Campo Intl, La Romana, Dominican Republic</LocationName>
+		<Home>KLNK</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>29611.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.38</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>206:36</AirframeTime>
+		<EngineTime>206:36</EngineTime>
+		<TimeLast100hr>05:10</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>296.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47846</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-364DK</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBSN</Location>
+		<LocationName>Santarem Intl, Santarem, Brazil</LocationName>
+		<Home>KPRC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>56301.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.44</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>79:31</AirframeTime>
+		<EngineTime>79:31</EngineTime>
+		<TimeLast100hr>79:31</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>563.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47847</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>UK-47444</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>In Flight</Location>
+		<LocationName>In Flight</LocationName>
+		<Home>UT0I</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>14596.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Mervy</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>278:07</AirframeTime>
+		<EngineTime>278:07</EngineTime>
+		<TimeLast100hr>76:14</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>157.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47848</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-325UZ</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KEWR</Location>
+		<LocationName>Newark Intl, Newark, New Jersey, United States</LocationName>
+		<Home>KSOW</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>39585.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.58</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>159:07</AirframeTime>
+		<EngineTime>159:07</EngineTime>
+		<TimeLast100hr>58:02</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>406.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47849</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-600EG</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBJU</Location>
+		<LocationName>Cariri, Juazeiro Do Norte, Brazil</LocationName>
+		<Home>KABY</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>39142.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.02</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>161:13</AirframeTime>
+		<EngineTime>161:13</EngineTime>
+		<TimeLast100hr>58:46</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>391.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47850</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-62234</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMMY</Location>
+		<LocationName>Gen Mariano Escobedo Intl, Monterrey, Mexico</LocationName>
+		<Home>T27</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>26048.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.81</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>223:34</AirframeTime>
+		<EngineTime>223:34</EngineTime>
+		<TimeLast100hr>19:29</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>260.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47851</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-312MY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMZH</Location>
+		<LocationName>Ixtapa-Zihuatanejo Intl, Zihuatanejo, Mexico</LocationName>
+		<Home>KGBD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>13409.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.71</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>283:46</AirframeTime>
+		<EngineTime>283:46</EngineTime>
+		<TimeLast100hr>82:33</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>134.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47852</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-5687Q</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBTE</Location>
+		<LocationName>Senador Petronio Portella, Teresina, Brazil</LocationName>
+		<Home>KPBI</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>28001.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.18</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>214:17</AirframeTime>
+		<EngineTime>214:17</EngineTime>
+		<TimeLast100hr>04:38</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>280.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47853</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-118NO</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>RCMQ</Location>
+		<LocationName>Ching Chuan Kang AB, Ching Chuan Kang, Taiwan</LocationName>
+		<Home>04V</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>40697.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>1.00</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>153:49</AirframeTime>
+		<EngineTime>153:49</EngineTime>
+		<TimeLast100hr>52:44</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>407.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47854</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>JA-7505</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LIRA</Location>
+		<LocationName>Ciampino, Rome, Italy</LocationName>
+		<Home>RJFM</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.12</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>364:20</AirframeTime>
+		<EngineTime>364:20</EngineTime>
+		<TimeLast100hr>59:50</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47855</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>XA-NQE</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SKBO</Location>
+		<LocationName>Eldorado Intl, Bogota, Colombia</LocationName>
+		<Home>MMTM</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>23292.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>236:42</AirframeTime>
+		<EngineTime>236:42</EngineTime>
+		<TimeLast100hr>34:11</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>233.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47856</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-853CX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>CYXY</Location>
+		<LocationName>Whitehorse Intl, Whitehorse, Yukon Territory, Canada</LocationName>
+		<Home>KGYR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>22572.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.17</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>240:08</AirframeTime>
+		<EngineTime>240:08</EngineTime>
+		<TimeLast100hr>38:06</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>231.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47857</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>LV-KYE</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MUSC</Location>
+		<LocationName>Abel Santa Maria, Santa Clara, Cuba</LocationName>
+		<Home>SAWG</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>32752.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.28</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>191:39</AirframeTime>
+		<EngineTime>191:39</EngineTime>
+		<TimeLast100hr>90:03</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>333.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47858</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>D-RKEH</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>EVRA</Location>
+		<LocationName>Riga Intl, Riga, Latvia</LocationName>
+		<Home>EDOP</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>355:25</AirframeTime>
+		<EngineTime>355:25</EngineTime>
+		<TimeLast100hr>51:37</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>2.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47859</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-885SD</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBCG</Location>
+		<LocationName>Campo Grande Intl, Campo Grande, Brazil</LocationName>
+		<Home>KMAF</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>34850.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.57</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>181:40</AirframeTime>
+		<EngineTime>181:40</EngineTime>
+		<TimeLast100hr>80:29</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>349.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47860</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-5620E</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SAEZ</Location>
+		<LocationName>Ezeiza Intl Ministro Pistarin, Buenos Aires, Argentina</LocationName>
+		<Home>KMSL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>33052.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.41</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>190:13</AirframeTime>
+		<EngineTime>190:13</EngineTime>
+		<TimeLast100hr>90:13</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>334.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47861</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>OB-0853</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBBR</Location>
+		<LocationName>Pres Juscelino Kubitschek Int, Brasilia, Brazil</LocationName>
+		<Home>SPAS</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>34205.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.28</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>184:44</AirframeTime>
+		<EngineTime>184:44</EngineTime>
+		<TimeLast100hr>84:02</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>342.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47862</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>XB-WGA</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MKJS</Location>
+		<LocationName>Sangster Intl, Montego Bay, Jamaica</LocationName>
+		<Home>MMML</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>22193.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.40</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>241:56</AirframeTime>
+		<EngineTime>241:56</EngineTime>
+		<TimeLast100hr>36:09</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>222.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47863</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>RA-33368</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>GGOV</Location>
+		<LocationName>Osvaldo Vieira, Bissau, Guinea-Bissau</LocationName>
+		<Home>USCC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.28</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>393:57</AirframeTime>
+		<EngineTime>393:57</EngineTime>
+		<TimeLast100hr>88:29</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47864</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-6169B</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MDLR</Location>
+		<LocationName>Casa De Campo Intl, La Romana, Dominican Republic</LocationName>
+		<Home>KLRD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>16016.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.21</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>271:21</AirframeTime>
+		<EngineTime>271:21</EngineTime>
+		<TimeLast100hr>68:47</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>160.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47865</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>OO-YME</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>EYKA</Location>
+		<LocationName>Kaunas Intl, Kaunas, Lithuania</LocationName>
+		<Home>EBCI</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.01</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>426:27</AirframeTime>
+		<EngineTime>426:27</EngineTime>
+		<TimeLast100hr>20:58</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47866</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-150TQ</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KLBB</Location>
+		<LocationName>Lubbock Intl, Lubbock, Texas, United States</LocationName>
+		<Home>PANC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.14</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>438:04</AirframeTime>
+		<EngineTime>438:04</EngineTime>
+		<TimeLast100hr>33:03</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47867</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-97254</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMMX</Location>
+		<LocationName>Lic Benito Juarez Intl, Mexico City, Mexico</LocationName>
+		<Home>KNFL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>10040.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.37</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>299:48</AirframeTime>
+		<EngineTime>299:48</EngineTime>
+		<TimeLast100hr>97:27</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>100.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47868</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-68498</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MUCL</Location>
+		<LocationName>Vilo Acuna, Cayo Largo Del Sur, Cuba</LocationName>
+		<Home>4U9</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>33804.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.59</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>186:39</AirframeTime>
+		<EngineTime>186:39</EngineTime>
+		<TimeLast100hr>85:26</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>346.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47869</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-42837</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MDSD</Location>
+		<LocationName>Las Americas Dr J F Pena Gome, Santo Domingo, Dominican Republic</LocationName>
+		<Home>4SD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>19327.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.77</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>255:35</AirframeTime>
+		<EngineTime>255:35</EngineTime>
+		<TimeLast100hr>51:04</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>193.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47870</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>RA-15051</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>EPMO</Location>
+		<LocationName>Modlin Mil, Modlin, Poland</LocationName>
+		<Home>UUWW</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.23</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>354:16</AirframeTime>
+		<EngineTime>354:16</EngineTime>
+		<TimeLast100hr>49:11</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>6.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47871</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-3469U</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBSP</Location>
+		<LocationName>Congonhas Intl, Sao Paulo, Brazil</LocationName>
+		<Home>KMKE</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>38066.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.74</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>166:21</AirframeTime>
+		<EngineTime>166:21</EngineTime>
+		<TimeLast100hr>64:59</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>384.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47872</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-285JI</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KAMA</Location>
+		<LocationName>Amarillo Intl, Amarillo, Texas, United States</LocationName>
+		<Home>KBJC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>21756.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.21</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>244:01</AirframeTime>
+		<EngineTime>244:01</EngineTime>
+		<TimeLast100hr>41:31</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>231.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47873</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>JA-2052</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LTCK</Location>
+		<LocationName>Mus AB, Mus, Turkey</LocationName>
+		<Home>RJCB</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.33</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>354:59</AirframeTime>
+		<EngineTime>354:59</EngineTime>
+		<TimeLast100hr>49:02</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47874</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>VH-IHB</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LTFJ</Location>
+		<LocationName>Sabiha Gokcen, Istanbul, Turkey</LocationName>
+		<Home>YCOM</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.18</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>350:37</AirframeTime>
+		<EngineTime>350:37</EngineTime>
+		<TimeLast100hr>46:39</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47875</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>HZ-GNW</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>ZSOF</Location>
+		<LocationName>Luogang, Hefei, China</LocationName>
+		<Home>OEPF</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>21807.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.16</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>243:46</AirframeTime>
+		<EngineTime>243:46</EngineTime>
+		<TimeLast100hr>40:23</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>229.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47876</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>VT-HUE</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>VARK</Location>
+		<LocationName>Rajkot, Rajkot, India</LocationName>
+		<Home>VO0I</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>34528.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>183:12</AirframeTime>
+		<EngineTime>183:12</EngineTime>
+		<TimeLast100hr>82:45</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>357.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47877</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>EC-KIA</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>EPWR</Location>
+		<LocationName>Strachowice, Wroclaw, Poland</LocationName>
+		<Home>GCLA</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>14879.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.14</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>276:46</AirframeTime>
+		<EngineTime>276:46</EngineTime>
+		<TimeLast100hr>73:26</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>161.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47878</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-587GU</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBFZ</Location>
+		<LocationName>Pinto Martins Intl, Fortaleza, Brazil</LocationName>
+		<Home>KIWA</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>35792.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.18</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>177:10</AirframeTime>
+		<EngineTime>177:10</EngineTime>
+		<TimeLast100hr>76:25</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>358.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47879</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-178CF</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SASJ</Location>
+		<LocationName>Gobernador Horacio Guzman, Jujuy, Argentina</LocationName>
+		<Home>0V2</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>38368.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.67</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>164:54</AirframeTime>
+		<EngineTime>164:54</EngineTime>
+		<TimeLast100hr>64:01</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>387.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47880</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-089CG</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBBR</Location>
+		<LocationName>Pres Juscelino Kubitschek Int, Brasilia, Brazil</LocationName>
+		<Home>KCLE</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>28151.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.13</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>213:34</AirframeTime>
+		<EngineTime>213:34</EngineTime>
+		<TimeLast100hr>10:14</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>293.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47881</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-866MU</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KHOU</Location>
+		<LocationName>Hobby, Houston, Texas, United States</LocationName>
+		<Home>KIAG</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>37195.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.23</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>170:30</AirframeTime>
+		<EngineTime>170:30</EngineTime>
+		<TimeLast100hr>69:18</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>372.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47882</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>TC-LRC</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>ZSAM</Location>
+		<LocationName>Gaoqi, Xiamen, China</LocationName>
+		<Home>LTCC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>19191.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.24</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>256:14</AirframeTime>
+		<EngineTime>256:14</EngineTime>
+		<TimeLast100hr>53:10</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>192.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47883</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-2112E</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MHTG</Location>
+		<LocationName>Toncontin Intl, Tegucigalpa, Honduras</LocationName>
+		<Home>KAVQ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>15626.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.24</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>273:12</AirframeTime>
+		<EngineTime>273:12</EngineTime>
+		<TimeLast100hr>70:06</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>162.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47884</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-6284W</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MUHA</Location>
+		<LocationName>Jose Marti Intl, Havana, Cuba</LocationName>
+		<Home>KMTC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>36745.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.38</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>172:38</AirframeTime>
+		<EngineTime>172:38</EngineTime>
+		<TimeLast100hr>72:03</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>367.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47885</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-5978F</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KSAT</Location>
+		<LocationName>San Antonio Intl, San Marcos, Texas, United States</LocationName>
+		<Home>KSVN</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>21057.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.16</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>247:20</AirframeTime>
+		<EngineTime>247:20</EngineTime>
+		<TimeLast100hr>44:37</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>223.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47886</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-834JF</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBCG</Location>
+		<LocationName>Campo Grande Intl, Campo Grande, Brazil</LocationName>
+		<Home>NV11</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>32069.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>194:54</AirframeTime>
+		<EngineTime>194:54</EngineTime>
+		<TimeLast100hr>92:55</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>327.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47887</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>7T-OLD</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>RKTU</Location>
+		<LocationName>Cheongju Intl, Cheongju, Korea</LocationName>
+		<Home>DAAE</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>28296.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.16</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>212:52</AirframeTime>
+		<EngineTime>212:52</EngineTime>
+		<TimeLast100hr>10:13</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>291.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47888</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>C-FQVN</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MDPP</Location>
+		<LocationName>Gregorio Luperon Intl, Puerto Plata, Dominican Republic</LocationName>
+		<Home>CYYR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>35450.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.40</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>178:48</AirframeTime>
+		<EngineTime>178:48</EngineTime>
+		<TimeLast100hr>78:05</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>357.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47889</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-64957</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KHRL</Location>
+		<LocationName>Valley Intl, Harlingen, Texas, United States</LocationName>
+		<Home>KRDU</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>22818.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.46</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>238:57</AirframeTime>
+		<EngineTime>238:57</EngineTime>
+		<TimeLast100hr>37:06</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>228.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47890</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-7145T</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KPHL</Location>
+		<LocationName>Philadelphia Intl, Philadelphia, Pennsylvania, United States</LocationName>
+		<Home>KGRB</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>37248.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.32</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>170:14</AirframeTime>
+		<EngineTime>170:14</EngineTime>
+		<TimeLast100hr>70:13</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>395.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47891</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-498LQ</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMCZ</Location>
+		<LocationName>Cozumel Intl, Cozumel, Mexico</LocationName>
+		<Home>KTOL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>23089.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>237:40</AirframeTime>
+		<EngineTime>237:40</EngineTime>
+		<TimeLast100hr>35:31</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>231.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47892</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>VT-YZY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>VTUW</Location>
+		<LocationName>Nakhon Phanom, Nakhon Phanom, Thailand</LocationName>
+		<Home>VODG</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>46076.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.31</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>128:12</AirframeTime>
+		<EngineTime>128:12</EngineTime>
+		<TimeLast100hr>27:30</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>461.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47893</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>TT-DRI</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LIEO</Location>
+		<LocationName>Costa Smeralda, Olbia, Italy</LocationName>
+		<Home>FTTY</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>16256.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.63</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>270:12</AirframeTime>
+		<EngineTime>270:12</EngineTime>
+		<TimeLast100hr>68:25</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>163.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47894</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-954MZ</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KSFO</Location>
+		<LocationName>San Francisco Intl, San Francisco, California, United States</LocationName>
+		<Home>KFSD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>17525.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.06</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>264:10</AirframeTime>
+		<EngineTime>264:10</EngineTime>
+		<TimeLast100hr>61:23</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>180.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47895</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-712DT</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMPR</Location>
+		<LocationName>Lic Gustavo Diaz Ordaz Intl, Puerto Vallarta, Mexico</LocationName>
+		<Home>KCIC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>25229.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.26</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>227:29</AirframeTime>
+		<EngineTime>227:29</EngineTime>
+		<TimeLast100hr>24:17</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>252.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47896</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>7O-EWC</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>FNCA</Location>
+		<LocationName>Cabinda, Cabinda, Angola</LocationName>
+		<Home>OYBD</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>20131.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.36</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>251:45</AirframeTime>
+		<EngineTime>251:45</EngineTime>
+		<TimeLast100hr>49:07</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>201.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47897</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-88785</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBFZ</Location>
+		<LocationName>Pinto Martins Intl, Fortaleza, Brazil</LocationName>
+		<Home>KRHI</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>43108.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.25</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>142:20</AirframeTime>
+		<EngineTime>142:20</EngineTime>
+		<TimeLast100hr>39:56</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>431.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47898</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-729JC</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KABQ</Location>
+		<LocationName>Albuquerque Intl Sunport, Albuquerque, New Mexico, United States</LocationName>
+		<Home>KMHR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>15255.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.14</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>274:58</AirframeTime>
+		<EngineTime>274:58</EngineTime>
+		<TimeLast100hr>71:50</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>171.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47899</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-23861</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KMSP</Location>
+		<LocationName>Minneapolis-St Paul Intl, Minneapolis, Minnesota, United States</LocationName>
+		<Home>KJFK</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>20717.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.31</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>248:58</AirframeTime>
+		<EngineTime>248:58</EngineTime>
+		<TimeLast100hr>46:51</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>211.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47900</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>YI-FKS</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LGMT</Location>
+		<LocationName>Odysseas Elytis, Mitilini, Greece</LocationName>
+		<Home>Z16J</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>31154.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.30</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>199:16</AirframeTime>
+		<EngineTime>199:16</EngineTime>
+		<TimeLast100hr>97:32</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>315.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47901</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-26381</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KPHX</Location>
+		<LocationName>Phoenix Sky Harbor Intl, Phoenix, Arizona, United States</LocationName>
+		<Home>KEGI</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>27962.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>swhalen17</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>214:28</AirframeTime>
+		<EngineTime>214:28</EngineTime>
+		<TimeLast100hr>11:55</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>292.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47902</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>LQ-VYG</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KJAX</Location>
+		<LocationName>Jacksonville Intl, Jacksonville, Florida, United States</LocationName>
+		<Home>SA0T</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>31499.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.34</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>197:37</AirframeTime>
+		<EngineTime>197:37</EngineTime>
+		<TimeLast100hr>96:35</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>329.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47903</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>C-FBHN</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBBE</Location>
+		<LocationName>Val De Caes, Belem, Brazil</LocationName>
+		<Home>CYQR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>40093.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.53</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>156:42</AirframeTime>
+		<EngineTime>156:42</EngineTime>
+		<TimeLast100hr>55:39</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>401.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47904</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-41357</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMCL</Location>
+		<LocationName>Culiacan Intl, Culiacan, Mexico</LocationName>
+		<Home>KBDL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>24727.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.32</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>229:52</AirframeTime>
+		<EngineTime>229:52</EngineTime>
+		<TimeLast100hr>28:58</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>253.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47905</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-169LS</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KIAD</Location>
+		<LocationName>Washington Dulles Intl, Washington, Virginia, United States</LocationName>
+		<Home>KLAR</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>17820.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>NoMercyEthan</RentedBy>
+		<FuelPct>0.85</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>262:45</AirframeTime>
+		<EngineTime>262:45</EngineTime>
+		<TimeLast100hr>57:45</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>192.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47906</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>PT-MCH</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBDN</Location>
+		<LocationName>Presidente Prudente, Presidente Prudente, Brazil</LocationName>
+		<Home>SBCT</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>31749.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.26</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>196:26</AirframeTime>
+		<EngineTime>196:26</EngineTime>
+		<TimeLast100hr>96:00</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>317.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47907</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-56523</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LGRX</Location>
+		<LocationName>Araxos AB, Araxos, Greece</LocationName>
+		<Home>KPHL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>29339.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.34</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>207:54</AirframeTime>
+		<EngineTime>207:54</EngineTime>
+		<TimeLast100hr>06:24</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>299.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47908</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>EW-OEF</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>GMMW</Location>
+		<LocationName>Arwi, Nador, Morocco</LocationName>
+		<Home>UMMS</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>8470.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>307:17</AirframeTime>
+		<EngineTime>307:17</EngineTime>
+		<TimeLast100hr>03:53</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>85.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47909</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-28633</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBRB</Location>
+		<LocationName>Presidente Medice Intl, Rio Branco, Brazil</LocationName>
+		<Home>24CL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>37357.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.71</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>169:43</AirframeTime>
+		<EngineTime>169:43</EngineTime>
+		<TimeLast100hr>67:23</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>374.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47910</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>ET-XLX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LTCC</Location>
+		<LocationName>Diyarbakir, Diyarbakir, Turkey</LocationName>
+		<Home>HAAB</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.26</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>375:41</AirframeTime>
+		<EngineTime>375:41</EngineTime>
+		<TimeLast100hr>71:03</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47911</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>JA-5849</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>RCMQ</Location>
+		<LocationName>Ching Chuan Kang AB, Ching Chuan Kang, Taiwan</LocationName>
+		<Home>RJNK</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>35134.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.32</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>180:18</AirframeTime>
+		<EngineTime>180:18</EngineTime>
+		<TimeLast100hr>79:31</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>351.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47912</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>HZ-GBM</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>LEBB</Location>
+		<LocationName>Bilbao, Bilbao, Spain</LocationName>
+		<Home>OEGS</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>14299.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>279:31</AirframeTime>
+		<EngineTime>279:31</EngineTime>
+		<TimeLast100hr>77:29</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>157.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47913</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>XZ-QID</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>VTBD</Location>
+		<LocationName>Bangkok Intl, Bangkok, Thailand</LocationName>
+		<Home>VYNP</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>40162.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.29</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>156:22</AirframeTime>
+		<EngineTime>156:22</EngineTime>
+		<TimeLast100hr>55:30</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>406.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47914</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>EP-JLG</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>ESKN</Location>
+		<LocationName>Skavsta, Stockholm, Sweden</LocationName>
+		<Home>OIFM</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.17</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>363:38</AirframeTime>
+		<EngineTime>363:38</EngineTime>
+		<TimeLast100hr>56:14</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47915</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-92151</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KBDL</Location>
+		<LocationName>Bradley Intl, Windsor Locks, Connecticut, United States</LocationName>
+		<Home>KNUW</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>6756.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.42</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>315:27</AirframeTime>
+		<EngineTime>315:27</EngineTime>
+		<TimeLast100hr>10:35</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>75.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47916</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-8158H</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>ZSPD</Location>
+		<LocationName>Pudong, Shanghai, China</LocationName>
+		<Home>KCOU</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>23404.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.30</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>236:10</AirframeTime>
+		<EngineTime>236:10</EngineTime>
+		<TimeLast100hr>32:23</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>234.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47917</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-113QP</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>In Flight</Location>
+		<LocationName>In Flight</LocationName>
+		<Home>KBNA</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>27912.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Cat022</RentedBy>
+		<FuelPct>0.41</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>214:42</AirframeTime>
+		<EngineTime>214:42</EngineTime>
+		<TimeLast100hr>12:35</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>279.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47918</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-181QU</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMSD</Location>
+		<LocationName>Los Cabos Intl, San Jose Del Cabo, Mexico</LocationName>
+		<Home>KLCQ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>10628.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.09</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>297:00</AirframeTime>
+		<EngineTime>297:00</EngineTime>
+		<TimeLast100hr>93:48</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>128.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47919</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>PK-TVX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>VIDN</Location>
+		<LocationName>Dehradun, Dehradun, India</LocationName>
+		<Home>WIIH</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>35053.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.75</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>180:42</AirframeTime>
+		<EngineTime>180:42</EngineTime>
+		<TimeLast100hr>78:01</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>356.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47920</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-355WS</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KBOS</Location>
+		<LocationName>Logan Intl, Boston, Massachusetts, United States</LocationName>
+		<Home>KRWI</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>23856.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>GJSTOKES</RentedBy>
+		<FuelPct>0.14</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>234:01</AirframeTime>
+		<EngineTime>234:01</EngineTime>
+		<TimeLast100hr>32:31</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>245.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47921</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-51832</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KSAT</Location>
+		<LocationName>San Antonio Intl, San Marcos, Texas, United States</LocationName>
+		<Home>KNZJ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>30318.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.55</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>203:15</AirframeTime>
+		<EngineTime>203:15</EngineTime>
+		<TimeLast100hr>00:00</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>310.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47922</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-39263</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>CYEG</Location>
+		<LocationName>Edmonton Intl, Edmonton, Alberta, Canada</LocationName>
+		<Home>KSTP</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>9304.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.24</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>303:18</AirframeTime>
+		<EngineTime>303:18</EngineTime>
+		<TimeLast100hr>01:26</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>102.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47923</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-546HY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SUMU</Location>
+		<LocationName>Carrasco Intl/Gen C L Berisso, Montevideo, Uruguay</LocationName>
+		<Home>A36</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>19328.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.69</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>255:35</AirframeTime>
+		<EngineTime>255:35</EngineTime>
+		<TimeLast100hr>53:26</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>193.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47924</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-73844</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MZBZ</Location>
+		<LocationName>Philip S W Goldson Intl, Belize City, Belize</LocationName>
+		<Home>KSAN</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>0.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.28</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>370:08</AirframeTime>
+		<EngineTime>370:08</EngineTime>
+		<TimeLast100hr>69:30</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>0.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47925</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-6676L</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBCY</Location>
+		<LocationName>Marechal Rondon Intl, Cuiaba, Brazil</LocationName>
+		<Home>KRAC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>33402.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.21</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>188:33</AirframeTime>
+		<EngineTime>188:33</EngineTime>
+		<TimeLast100hr>87:58</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>334.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47926</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-475JY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KSTL</Location>
+		<LocationName>Lambert-St Louis Intl, St Louis, Missouri, United States</LocationName>
+		<Home>KBFL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>7415.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.17</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>312:18</AirframeTime>
+		<EngineTime>312:18</EngineTime>
+		<TimeLast100hr>08:52</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>83.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47927</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-29673</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MUCU</Location>
+		<LocationName>Antonio Maceo Intl, Santiago De Cuba, Cuba</LocationName>
+		<Home>KATY</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>18897.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.39</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>257:38</AirframeTime>
+		<EngineTime>257:38</EngineTime>
+		<TimeLast100hr>53:39</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>193.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47928</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-67368</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBPS</Location>
+		<LocationName>Porto Seguro, Porto Seguro, Brazil</LocationName>
+		<Home>KECG</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>41457.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.04</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>150:12</AirframeTime>
+		<EngineTime>150:12</EngineTime>
+		<TimeLast100hr>48:44</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>415.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47929</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-13541</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MMMZ</Location>
+		<LocationName>Gen Rafael Buelna Intl, Mazatlan, Mexico</LocationName>
+		<Home>NGZ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>17643.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.40</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>263:36</AirframeTime>
+		<EngineTime>263:36</EngineTime>
+		<TimeLast100hr>61:30</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>176.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47930</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-62983</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KFLL</Location>
+		<LocationName>Ft Lauderdale-Hollywood Intl, Ft Lauderdale, Florida, United States</LocationName>
+		<Home>KGCK</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>5307.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.19</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>322:20</AirframeTime>
+		<EngineTime>322:20</EngineTime>
+		<TimeLast100hr>18:04</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>58.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47931</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-74008</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBGR</Location>
+		<LocationName>Guarulhos Intl., Sao Paulo, Brazil</LocationName>
+		<Home>KPIE</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>36654.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.36</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>173:04</AirframeTime>
+		<EngineTime>173:04</EngineTime>
+		<TimeLast100hr>72:39</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>367.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47932</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-0267D</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBMO</Location>
+		<LocationName>Zumbi Dos Palmares Intl, Maceio, Brazil</LocationName>
+		<Home>KDUC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>36687.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>samarcio88</RentedBy>
+		<FuelPct>0.15</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>172:55</AirframeTime>
+		<EngineTime>172:55</EngineTime>
+		<TimeLast100hr>71:05</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>380.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47933</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>LZ-FJJ</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>UKHH</Location>
+		<LocationName>Osnova, Kharkiv, Ukraine</LocationName>
+		<Home>LB0F</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>6086.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.05</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>318:38</AirframeTime>
+		<EngineTime>318:38</EngineTime>
+		<TimeLast100hr>15:36</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>82.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47934</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-31471</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>MUVR</Location>
+		<LocationName>Juan G. Gomez Intl, Varadero, Cuba</LocationName>
+		<Home>KLAL</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>22582.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.10</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>240:05</AirframeTime>
+		<EngineTime>240:05</EngineTime>
+		<TimeLast100hr>37:32</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>233.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47935</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-47262</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBMK</Location>
+		<LocationName>Montes Claros, Montes Claros, Brazil</LocationName>
+		<Home>4U9</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>32335.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.32</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>193:38</AirframeTime>
+		<EngineTime>193:38</EngineTime>
+		<TimeLast100hr>93:11</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>329.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47936</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-81775</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBCY</Location>
+		<LocationName>Marechal Rondon Intl, Cuiaba, Brazil</LocationName>
+		<Home>KCDC</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>29808.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.31</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>205:40</AirframeTime>
+		<EngineTime>205:40</EngineTime>
+		<TimeLast100hr>02:38</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>298.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47937</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-727XY</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KSAT</Location>
+		<LocationName>San Antonio Intl, San Marcos, Texas, United States</LocationName>
+		<Home>PAJN</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>13386.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.28</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>283:52</AirframeTime>
+		<EngineTime>283:52</EngineTime>
+		<TimeLast100hr>81:50</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>134.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47938</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>PT-AFX</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>KMDW</Location>
+		<LocationName>Chicago-Midway, Chicago, Illinois, United States</LocationName>
+		<Home>SBCJ</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>20964.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.17</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>247:47</AirframeTime>
+		<EngineTime>247:47</EngineTime>
+		<TimeLast100hr>45:32</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>224.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>47939</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>N-623CT</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>SBFI</Location>
+		<LocationName>Cataratas Intl, Foz Do Iguacu, Brazil</LocationName>
+		<Home>PAHO</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>13222.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>Not rented.</RentedBy>
+		<FuelPct>0.81</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>284:39</AirframeTime>
+		<EngineTime>284:39</EngineTime>
+		<TimeLast100hr>81:19</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>132.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+	<Aircraft>
+		<SerialNumber>52183</SerialNumber>
+		<MakeModel>Airbus A320 (MSFS)</MakeModel>
+		<Registration>VH-MSS</Registration>
+		<Owner>Bank of FSE</Owner>
+		<Location>EDDM</Location>
+		<LocationName>Munich, Munich, Germany</LocationName>
+		<Home>YSSY</Home>
+		<SalePrice>0.00</SalePrice>
+		<SellbackPrice>6223.00</SellbackPrice>
+		<Equipment>IFR/AP/GPS</Equipment>
+		<RentalDry>0.00</RentalDry>
+		<RentalWet>0.00</RentalWet>
+		<RentalType>hour</RentalType>
+		<Bonus>0</Bonus>
+		<RentalTime>50400</RentalTime>
+		<RentedBy>niko7072</RentedBy>
+		<FuelPct>0.36</FuelPct>
+		<NeedsRepair>0</NeedsRepair>
+		<AirframeTime>317:59</AirframeTime>
+		<EngineTime>317:59</EngineTime>
+		<TimeLast100hr>15:05</TimeLast100hr>
+		<LeasedFrom>NA</LeasedFrom>
+		<MonthlyFee>71.00</MonthlyFee>
+		<FeeOwed>0.00</FeeOwed>
+	</Aircraft>
+</AircraftItems>

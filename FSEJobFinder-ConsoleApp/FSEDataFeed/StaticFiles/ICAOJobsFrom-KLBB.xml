@@ -1,0 +1,614 @@
+<IcaoJobsFrom xmlns="https://server.fseconomy.net" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns:schemaLocation="https://server.fseconomy.net/static/xsd/datafeed_jobs.xsd" total="36">
+<Assignment>
+<Id>330414623</Id>
+<Location>KLBB</Location>
+<ToIcao>1TX2</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>151</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>643.00</Pay>
+<Expires>1 days</Expires>
+<ExpireDateTime>2021-05-07 05:31:08</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330513454</Id>
+<Location>KLBB</Location>
+<ToIcao>54F</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1715</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>4242.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 22:01:09</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330411205</Id>
+<Location>KLBB</Location>
+<ToIcao>E13</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>268.00</Pay>
+<Expires>3 days</Expires>
+<ExpireDateTime>2021-05-09 07:31:03</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330473496</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>FAA ZSE ATC TOWER Controller</Commodity>
+<Pay>898.00</Pay>
+<Expires>4 days</Expires>
+<ExpireDateTime>2021-05-11 04:01:06</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330279240</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pvt Pilot Part 141 Flight Student &#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 09:00:02</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330278331</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 08:30:10</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330270853</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 06:00:10</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330381224</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>FAA GADO Inspector</Commodity>
+<Pay>898.00</Pay>
+<Expires>3 days</Expires>
+<ExpireDateTime>2021-05-09 19:01:02</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330311304</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>FAA ZSE ATC TOWER Controller</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 19:30:33</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330310032</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Wa. St. University Grad Student &#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 19:00:32</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330405805</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>3 days</Expires>
+<ExpireDateTime>2021-05-10 03:31:03</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330523497</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pro ATR Part 141 Flight Student &#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>5 days</Expires>
+<ExpireDateTime>2021-05-11 22:01:04</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330445753</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>4 days</Expires>
+<ExpireDateTime>2021-05-10 18:01:02</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330522627</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pvt Pilot Part 141 Flight Student &#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>5 days</Expires>
+<ExpireDateTime>2021-05-11 21:31:07</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330335747</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pvt Pilot Part 141 Flight Student &#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-09 03:30:34</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330409804</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Inst Pilot Part 141 Flight Student&#127891;</Commodity>
+<Pay>898.00</Pay>
+<Expires>4 days</Expires>
+<ExpireDateTime>2021-05-10 05:01:03</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330522628</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>FAA ZSE ATC TOWER Controller</Commodity>
+<Pay>898.00</Pay>
+<Expires>5 days</Expires>
+<ExpireDateTime>2021-05-11 21:31:07</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330317378</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 21:30:32</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330523500</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>FAA ZSE ATC Center Controller</Commodity>
+<Pay>898.00</Pay>
+<Expires>5 days</Expires>
+<ExpireDateTime>2021-05-11 22:01:04</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330310033</Id>
+<Location>KLBB</Location>
+<ToIcao>KSJT</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Stratocaster Aviation Passenger</Commodity>
+<Pay>898.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 19:00:32</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>true</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330494753</Id>
+<Location>KLBB</Location>
+<ToIcao>KRTN</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>2161</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>2388.00</Pay>
+<Expires>1 days</Expires>
+<ExpireDateTime>2021-05-08 01:31:08</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330407776</Id>
+<Location>KLBB</Location>
+<ToIcao>NM61</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>6</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Passengers</Commodity>
+<Pay>3026.00</Pay>
+<Expires>1 days</Expires>
+<ExpireDateTime>2021-05-07 05:01:09</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330413267</Id>
+<Location>KLBB</Location>
+<ToIcao>KADS</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>9</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Passengers</Commodity>
+<Pay>2808.00</Pay>
+<Expires>9 hrs</Expires>
+<ExpireDateTime>2021-05-06 14:01:08</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330445270</Id>
+<Location>KLBB</Location>
+<ToIcao>2V1</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>4465</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>6957.00</Pay>
+<Expires>1 days</Expires>
+<ExpireDateTime>2021-05-07 14:31:11</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330443220</Id>
+<Location>KLBB</Location>
+<ToIcao>Z22T</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>8</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Corporate Jet Hire</Commodity>
+<Pay>9729.00</Pay>
+<Expires>1 days</Expires>
+<ExpireDateTime>2021-05-07 14:01:04</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330495533</Id>
+<Location>KLBB</Location>
+<ToIcao>KGLS</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>8</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Corporate Jet Hire</Commodity>
+<Pay>9737.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 14:01:03</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330533947</Id>
+<Location>KLBB</Location>
+<ToIcao>KRIL</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>5</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Class 2B Patient Transport</Commodity>
+<Pay>5222.00</Pay>
+<Expires>3 days</Expires>
+<ExpireDateTime>2021-05-09 11:01:01</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330418918</Id>
+<Location>KLBB</Location>
+<ToIcao>KTUS</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>2075</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>4833.00</Pay>
+<Expires>19 hrs</Expires>
+<ExpireDateTime>2021-05-07 00:01:10</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330490375</Id>
+<Location>KLBB</Location>
+<ToIcao>MMMY</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>119</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Airline Pilot for Hire</Commodity>
+<Pay>4662.00</Pay>
+<Expires>11 hrs</Expires>
+<ExpireDateTime>2021-05-06 16:01:09</ExpireDateTime>
+<Type>All-In</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>All-In</Type>
+<AircraftId>47019</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330515359</Id>
+<Location>KLBB</Location>
+<ToIcao>MMLM</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>8</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Corporate Jet Hire</Commodity>
+<Pay>13942.00</Pay>
+<Expires>2 days</Expires>
+<ExpireDateTime>2021-05-08 21:01:03</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330345136</Id>
+<Location>KLBB</Location>
+<ToIcao>KRAP</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>4072</Amount>
+<UnitType>kg</UnitType>
+<Commodity>Cargo</Commodity>
+<Pay>10773.00</Pay>
+<Expires>7 hrs</Expires>
+<ExpireDateTime>2021-05-06 12:30:37</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330422333</Id>
+<Location>KLBB</Location>
+<ToIcao>MM0O</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>6</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Corporate Jet Hire</Commodity>
+<Pay>9993.00</Pay>
+<Expires>17 hrs</Expires>
+<ExpireDateTime>2021-05-06 22:31:04</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330372137</Id>
+<Location>KLBB</Location>
+<ToIcao>KTPH</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>4</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Class 2B Patient Transport</Commodity>
+<Pay>9839.00</Pay>
+<Expires>11 hrs</Expires>
+<ExpireDateTime>2021-05-06 16:00:26</ExpireDateTime>
+<Type>VIP</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>VIP</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330458749</Id>
+<Location>KLBB</Location>
+<ToIcao>KBUR</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>119</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Airline Pilot for Hire</Commodity>
+<Pay>8239.00</Pay>
+<Expires>expired (13 mins)</Expires>
+<ExpireDateTime>2021-05-06 04:31:10</ExpireDateTime>
+<Type>All-In</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>All-In</Type>
+<AircraftId>47866</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330507652</Id>
+<Location>KLBB</Location>
+<ToIcao>MMMM</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>119</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Pax - Airline Pilot for Hire</Commodity>
+<Pay>8177.00</Pay>
+<Expires>11 hrs</Expires>
+<ExpireDateTime>2021-05-06 16:01:09</ExpireDateTime>
+<Type>All-In</Type>
+<Express>True</Express>
+<PtAssignment>false</PtAssignment>
+<Type>All-In</Type>
+<AircraftId>47840</AircraftId>
+</Assignment>
+<Assignment>
+<Id>330090055</Id>
+<Location>KLBB</Location>
+<ToIcao>CYTS</ToIcao>
+<FromIcao>KLBB</FromIcao>
+<Amount>1</Amount>
+<UnitType>passengers</UnitType>
+<Commodity>Passenger</Commodity>
+<Pay>4326.00</Pay>
+<Expires>1 hrs</Expires>
+<ExpireDateTime>2021-05-06 06:31:02</ExpireDateTime>
+<Type>Trip-Only</Type>
+<Express>False</Express>
+<PtAssignment>false</PtAssignment>
+<Type>Trip-Only</Type>
+<AircraftId>0</AircraftId>
+</Assignment>
+</IcaoJobsFrom>
