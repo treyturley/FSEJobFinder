@@ -107,13 +107,25 @@ namespace FSEDataFeed
                 DateTime end = DateTime.Now;
                 DateTime start = end.Subtract(TimeSpan.FromHours(6));
 
-                foreach (FSEDataRequest request in requests)
+                List<FSEDataRequest> requestsToRemove = new List<FSEDataRequest>();
+
+                File.Delete(RequestsfilePath);
+
+                using (StreamWriter writer = new StreamWriter(RequestsfilePath, true))
                 {
-                    if (!request.isInTimeWindow(start,end))
+                    foreach (FSEDataRequest request in requests)
                     {
-                        requests.Remove(request);
+                        if (!request.isInTimeWindow(start, end))
+                        {
+                            requestsToRemove.Add(request);
+                        } else
+                        {
+                            writer.WriteLine(request.ToString());
+                        }
                     }
                 }
+
+                requests.RemoveAll(request => requestsToRemove.Contains(request));
             }
         }
 
