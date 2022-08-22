@@ -10,17 +10,20 @@ namespace FSEDataFeed
         //all FSE Request URLs have Query strings. When we split it up, there will always be atleast 3 key value pairs in the query string
         //The part we are most interested in is everything after "query="
         //Sample URL: https://server.fseconomy.net/data?userkey=TheUserKey&format=xml&query=aircraft&search=configs
-        private const int MIN_QUERY_STRINGS = 3; 
-        
+        private const int MIN_QUERY_STRINGS = 3;
+
         //We are mostly interested in everything after "Query=". When we split a full URL on '&' this Query part will start at index 2
         private const int QUERY_STARTING_INDEX = 2;
+
+        public const string TIME_FORMAT = "M-d-yyyy_h-m_tt";
 
         private DateTime timeStamp;
         private string url;
         private HttpWebRequest request;
         private FSEDataRequestType requestType;
-        private string serializedResponsePath;
         private string requestQuery;
+        private string responseData;
+        private string responseFileName;
 
         /// <summary>
         /// Used to create a new FSEDataRequest with the timestamp set to the current time.
@@ -33,7 +36,8 @@ namespace FSEDataFeed
             request = (HttpWebRequest)WebRequest.Create(url);
             timeStamp = DateTime.Now;
             this.requestType = requestType;
-            setRequestQuery();
+            SetRequestQuery();
+            responseFileName = requestType.ToString() + "_" + timeStamp.ToString(TIME_FORMAT) + ".xml";
         }
 
 
@@ -43,7 +47,8 @@ namespace FSEDataFeed
             this.url = url;
             request = (HttpWebRequest)WebRequest.Create(url);
             this.timeStamp = timeStamp;
-            setRequestQuery();
+            SetRequestQuery();
+            responseFileName = requestType.ToString() + "_" + timeStamp.ToString(TIME_FORMAT) + ".xml";
         }
 
         public FSEDataRequest(string requestObjAsString)
@@ -56,9 +61,24 @@ namespace FSEDataFeed
             requestType = (FSEDataRequestType)Enum.Parse(typeof(FSEDataRequestType), objParts[0]);
             //requestQuery = objParts[1];
             url = objParts[1];
-            timeStamp = DateTime.Parse(objParts[2]);
+            responseFileName = objParts[2];
+            timeStamp = DateTime.Parse(objParts[3]);
             request = (HttpWebRequest)WebRequest.Create(url);
-            setRequestQuery();
+            SetRequestQuery();
+        }
+
+        /// <summary>
+        /// Gets the deserialized response data for this request.
+        /// </summary>
+        /// <returns>The deserialized response string for this response.</returns>
+        public string getResponseData()
+        {
+            return responseData;
+        }
+
+        public void setResponseData(string responseData)
+        {
+            this.responseData = responseData;
         }
 
         public HttpWebResponse GetResponse()
@@ -87,9 +107,9 @@ namespace FSEDataFeed
                 {
                     //TODO: handle the case were the response is not what we expected
                 }
-                
+
             }
-                return responseStr;
+            return responseStr;
         }
 
         public string GetURL()
@@ -106,7 +126,13 @@ namespace FSEDataFeed
         {
             return requestType;
         }
-        public bool isInTimeWindow(DateTime start, DateTime end)
+
+        public string GetRequestQuery()
+        {
+            return requestQuery;
+        }
+
+        public bool IsInTimeWindow(DateTime start, DateTime end)
         {
             //check to see if this request was fired off in the last 6 hours
             if ((GetTimestamp() > start) && (GetTimestamp() < end))
@@ -116,7 +142,7 @@ namespace FSEDataFeed
             return false;
         }
 
-        private void setRequestQuery()
+        private void SetRequestQuery()
         {
             if (url.Length != 0)
             {
@@ -125,7 +151,7 @@ namespace FSEDataFeed
 
                 //after splitting we should have atleast 3 parts. the query starts in the third part and goes to the end of the URL
                 //TODO: deal with this magic number
-                if(urlParts.Length < MIN_QUERY_STRINGS)
+                if (urlParts.Length < MIN_QUERY_STRINGS)
                 {
                     //we have an invalid URL
                     throw new Exception("Error processing URL: Invalid URL, too short");
@@ -133,12 +159,12 @@ namespace FSEDataFeed
 
                 string queryStr = "";
 
-                for(int i = QUERY_STARTING_INDEX; i<urlParts.Length; i++)
+                for (int i = QUERY_STARTING_INDEX; i < urlParts.Length; i++)
                 {
                     //validate that the first part from the URL contains "Query=" indicating we have a valid FSEDataExport URL
                     if (i == QUERY_STARTING_INDEX)
                     {
-                        if(!urlParts[i].ToLower().StartsWith("query="))
+                        if (!urlParts[i].ToLower().StartsWith("query="))
                         {
                             //we have a problem
                             throw new Exception("Error processing URL: Invalid query string.");
@@ -152,7 +178,7 @@ namespace FSEDataFeed
                         queryStr += urlParts[i];
 
                         //if this isnt the last part of the query string, add the '&' back into to preserve the full query string
-                        if(i < (urlParts.Length - 1))
+                        if (i < (urlParts.Length - 1))
                         {
                             queryStr += "&";
                         }
@@ -171,9 +197,10 @@ namespace FSEDataFeed
             string result = "";
 
             result += requestType.ToString() + ",";
-            //result += requestQuery + ",";
+            // result += requestQuery + ",";
             result += url + ",";
-            result += timeStamp.ToString();
+            result += responseFileName + ",";
+            result += timeStamp.ToString(TIME_FORMAT);
 
             return result;
         }
@@ -191,39 +218,43 @@ namespace FSEDataFeed
             }
 
             FSEDataRequest objAsDataRequest = obj as FSEDataRequest;
-            if(objAsDataRequest == null)
+            if (objAsDataRequest == null)
             {
                 return false;
             }
-            
+
             return Equals(objAsDataRequest);
         }
 
         /// <summary>
-        /// Returns true if this Data Request is the same as the other Data Request
+        /// Returns true if this Data Request and the other data request have the same
+        /// request type, url, and timestamp
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>
         public bool Equals(FSEDataRequest other)
         {
-            if(this.requestType == other.requestType)
+            if (this.requestType == other.requestType)
             {
                 if (this.url.CompareTo(other.url) == 0)
                 {
+                    // requests are considered to be the same when type and url match
+                    return true;
+
                     //when comparing date times, by default either the ticks (when using equals)
                     //or the milliseconds when using CompareTo get compared. The datetime from the file doesnt have this info.
 
                     //TODO: see if there is a better way to do this. 
                     //manually compare each element
-                    if (this.timeStamp.Year.Equals(other.timeStamp.Year) &&
+                    /*if (this.timeStamp.Year.Equals(other.timeStamp.Year) &&
                         this.timeStamp.Month.Equals(other.timeStamp.Month) &&
                         this.timeStamp.Day.Equals(other.timeStamp.Day) &&
                         this.timeStamp.Hour.Equals(other.timeStamp.Hour) &&
                         this.timeStamp.Minute.Equals(other.timeStamp.Minute) &&
                         this.timeStamp.Second.Equals(other.timeStamp.Second))
-                    {   
+                    {
                         return true;
-                    }
+                    }*/
                 }
             }
             return false;
@@ -239,7 +270,7 @@ namespace FSEDataFeed
         {
             if (requestType == other.requestType)
             {
-                if(requestQuery.CompareTo(other.requestQuery) == 0)
+                if (requestQuery.CompareTo(other.requestQuery) == 0)
                 {
                     if (timeStamp.CompareTo(other.timeStamp) == 0)
                     {

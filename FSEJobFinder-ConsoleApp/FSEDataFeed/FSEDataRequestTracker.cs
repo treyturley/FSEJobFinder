@@ -12,6 +12,8 @@ namespace FSEDataFeed
     /// </summary>
     public class FSEDataRequestTracker
     {
+        private const string RESPONSE_DIRECTORY_NAME = "\\fse_responses";
+
         private List<FSEDataRequest> requests;
         private const int SMALL_WINDOW_LIMIT = 10;
         private const int BIG_WINDOW_LIMIT = 40;
@@ -24,6 +26,9 @@ namespace FSEDataFeed
 
             RequestsfilePath = Directory.GetCurrentDirectory() + "\\" + requestsFileName;
 
+            //create response data directory if needed
+            CreateResponseDirectory();
+
             //read in all of the previosuly saved requests
             LoadRequests();
 
@@ -31,6 +36,8 @@ namespace FSEDataFeed
             PruneRequests();
         }
 
+
+        //TODO: need to see if we really need AddRequest and SaveRequest to be two seperate funcs
         public void AddRequest(FSEDataRequest request)
         {
             requests.Add(request);
@@ -115,7 +122,7 @@ namespace FSEDataFeed
                 {
                     foreach (FSEDataRequest request in requests)
                     {
-                        if (!request.isInTimeWindow(start, end))
+                        if (!request.IsInTimeWindow(start, end))
                         {
                             requestsToRemove.Add(request);
                         } else
@@ -126,6 +133,8 @@ namespace FSEDataFeed
                 }
 
                 requests.RemoveAll(request => requestsToRemove.Contains(request));
+
+                //TODO: Also need to remove all of the response data that is no longer valid from response data dir
             }
         }
 
@@ -152,6 +161,19 @@ namespace FSEDataFeed
             using (StreamWriter writer = new StreamWriter(RequestsfilePath, true))
             {   
                 writer.WriteLine(request.ToString());
+            }
+        }
+
+        /// <summary>
+        /// Saves the response data in a file in the response directory.
+        /// </summary>
+        /// <param name="request"></param>
+        public void SaveResponse(FSEDataRequest request)
+        {
+            string responseFilePath = Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME + "\\" + request.GetRequestType() + "_" + request.GetTimestamp().ToString(FSEDataRequest.TIME_FORMAT) + ".xml";
+            using (StreamWriter writer = new StreamWriter(responseFilePath, false))
+            {
+                writer.WriteLine(request.getResponseData());
             }
         }
 
@@ -229,6 +251,14 @@ namespace FSEDataFeed
             }
 
             return oldestRequest;
+        }
+
+
+        private void CreateResponseDirectory()
+        {
+            if (!Directory.Exists(Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME)){
+                Directory.CreateDirectory(Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME);
+            }
         }
 
         // override object.Equals
