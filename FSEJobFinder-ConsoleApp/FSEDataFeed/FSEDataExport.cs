@@ -95,10 +95,14 @@ namespace FSEDataFeed
                         aircraftItems = (AircraftItems)serializer.Deserialize(stream);
 
                         //since we got a response and were able to deserialize it, lets log it
+                        using(StringWriter strWriter = new StringWriter())
+                        {
+                            serializer.Serialize(strWriter, aircraftItems);
+                            request.setResponseData(strWriter.ToString());
+                        }
                         requestTracker.SaveRequest(request);
+                        requestTracker.SaveResponse(request);
                     }
-
-                    //TODO: logging for the response could go here
                 }
             }
             else
@@ -159,8 +163,15 @@ namespace FSEDataFeed
                     using (Stream stream = response.GetResponseStream())
                     {
                         availableJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+
                         //since we got a response and were able to deserialize it, lets log it
+                        using (StringWriter strWriter = new StringWriter())
+                        {
+                            serializer.Serialize(strWriter, availableJobs);
+                            request.setResponseData(strWriter.ToString());
+                        }
                         requestTracker.SaveRequest(request);
+                        requestTracker.SaveResponse(request);
                     }
                 }
             }
