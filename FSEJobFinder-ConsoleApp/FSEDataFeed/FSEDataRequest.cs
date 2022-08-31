@@ -132,6 +132,11 @@ namespace FSEDataFeed
             return requestQuery;
         }
 
+        public string getresponseFileName()
+        {
+            return responseFileName;
+        }
+
         public bool IsInTimeWindow(DateTime start, DateTime end)
         {
             //check to see if this request was fired off in the last 6 hours

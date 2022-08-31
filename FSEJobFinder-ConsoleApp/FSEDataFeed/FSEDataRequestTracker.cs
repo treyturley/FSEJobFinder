@@ -125,6 +125,8 @@ namespace FSEDataFeed
                         if (!request.IsInTimeWindow(start, end))
                         {
                             requestsToRemove.Add(request);
+                            string path = Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME + "\\" + request.getresponseFileName();
+                            File.Delete(path);
                         } else
                         {
                             writer.WriteLine(request.ToString());
