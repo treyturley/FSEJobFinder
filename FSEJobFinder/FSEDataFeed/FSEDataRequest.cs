@@ -200,7 +200,8 @@ namespace FSEDataFeed
             // result += requestQuery + ",";
             result += url + ",";
             result += responseFileName + ",";
-            result += timeStamp.ToString(TIME_FORMAT);
+            //result += timeStamp.ToString(TIME_FORMAT);
+            result += timeStamp.ToString();
 
             return result;
         }
