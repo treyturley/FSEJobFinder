@@ -342,3 +342,5 @@ healthchecksdb
 #user key is user specific so ignore it
 /FSEJobFinder/FSEDataFeed/StaticFiles/DataExports.txt
 /FSEJobFinder/FSEDataFeed/StaticFiles/UserKey.txt
+/FSEJobFinder/FSEDataFeedAPI/FSEDataRequests.txt
+/FSEJobFinder/FSEDataFeedAPI/fse_responses
