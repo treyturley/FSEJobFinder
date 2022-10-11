@@ -145,7 +145,13 @@ namespace FSEDataFeed
 
         private List<Assignment> getAllCommercialAssignments(string makeModel)
         {
-            //TODO: input validation on makeModel, must only be makemodesl that have "commercial flights" aka assigned All-In assignments"
+            //TODO: we should check to see if the associated aircraft list (all737_800s, all747_400s, etc)
+            //      is populated before making a call to the FSE API
+
+
+            //TODO: input validation on makeModel, must only be makemodels that have "commercial flights"
+            //      aka assigned All-In assignments"
+
             //TODO: Make this return a assignment object?                     
             List<Assignment> availableAssignments = new List<Assignment>();
 
