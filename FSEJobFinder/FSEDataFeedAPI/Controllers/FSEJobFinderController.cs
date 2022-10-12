@@ -1,4 +1,5 @@
 using FSEDataFeed;
+using FSEDataFeedAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FSEDataFeedAPI.Controllers
@@ -7,7 +8,7 @@ namespace FSEDataFeedAPI.Controllers
     [Route("api/[controller]")]
     public class FSEJobFinderController : ControllerBase
     {
-        private FSEDataAPI fseData = new();
+        private FSEDataService fseDataService = new();
 
         private readonly ILogger<FSEJobFinderController> _logger;
 
@@ -26,27 +27,47 @@ namespace FSEDataFeedAPI.Controllers
         /// returned to the specified count.</param>
         /// <returns>A json result object containing the available assignments.</returns>
         [HttpGet("GetCommercialAssignmentsByMakeModel/{makeModel}")]
-        public JsonResult GetCommercialAssignments(string makeModel, int count = -1)
+        public JsonResult GetCommercialAssignments(AircraftMakeModel.MakeModel makeModel, string userKey, int count = -1)
         {
-            //TODO: eventually this will need to also get
-            //      the users userkey from the params and pass that to getCommercialAssignments
+            string makeModelStr = "";
 
-            //TODO: validate makeModel and count
-            return new JsonResult(fseData.getCommercialAssignments(makeModel, count));
+            // validate makeModel
+            if (Enum.IsDefined(typeof(AircraftMakeModel.MakeModel), makeModel))
+            {
+                makeModelStr = AircraftMakeModel.MakeModelAsString(makeModel);
+            }
+            else
+            {
+                return new JsonResult(BadRequest("Invalid MakeModel"));
+            }
+
+            // validate userKey
+            if(userKey == null || userKey.Length == 0)
+            {
+                return new JsonResult(BadRequest("Invalid User Key"));
+            }
+
+            // Validate count
+            if(count < 1 && count != -1)
+            {
+                return new JsonResult(BadRequest("Count must be positive or not included at all"));
+            }
+            
+            return new JsonResult(fseDataService.GetService(userKey).getCommercialAssignments(makeModelStr, count));
         }
 
         [HttpGet("getBestCommercialAssignmentByMakeModel/{makeModel}")]
-        public JsonResult GetBestCommercialAssignment(string makeModel)
+        public JsonResult GetBestCommercialAssignment(string makeModel, string userKey)
         {
             //TODO: validate makeModel
-            return new JsonResult(fseData.getBestCommercialAssignment(makeModel));
+            return new JsonResult(fseDataService.GetService(userKey).getBestCommercialAssignment(makeModel));
         }
 
         [HttpGet("GetUSCommercialAssignmentsByMakeModel/{makeModel}")]
-        public JsonResult GetUSCommercialAssignments(string makeModel)
+        public JsonResult GetUSCommercialAssignments(string makeModel, string userKey)
         {
             //TODO: validate makeModel
-            return new JsonResult(fseData.GetUSAssignments(AircraftMakeModelStrEnum.Boeing747_400));
+            return new JsonResult(fseDataService.GetService(userKey).GetUSAssignments(makeModel));
         }
     }
 }
