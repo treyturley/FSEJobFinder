@@ -28,6 +28,8 @@ builder.Services.AddSwaggerGen(options =>
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 
+    //adds filter to check for fse-access-key header in all requests
+    options.OperationFilter<AddHeaderParameter>();
 });
 
 var app = builder.Build();
