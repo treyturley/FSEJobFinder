@@ -12,7 +12,9 @@ namespace FSEJobfinderConsoleApp
         {
             printWelcomeInstructions();
 
-            FSEDataAPI fSEData = new FSEDataAPI();
+            //TODO: ask user to enter userkey
+
+            FSEDataAPI fSEData = new FSEDataAPI("userkey");
 
             string consoleInput = "";
             bool running = true;

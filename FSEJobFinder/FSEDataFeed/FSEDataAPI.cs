@@ -32,7 +32,7 @@ namespace FSEDataFeed
         /// This class interacts with the FSE Data API provided by FSEconomey.net to get
         /// details on available airplanes to rent, available jobs, and other details.
         /// </summary>
-        public FSEDataAPI()
+        public FSEDataAPI(string userKey)
         {
             all737_800s = new List<Aircraft>();
             all747_400s = new List<Aircraft>();
@@ -40,10 +40,10 @@ namespace FSEDataFeed
             All747Assignments = new List<Assignment>();
             ICAOWithAssignments = new List<IcaoJobsFrom>();
 
-            //TODO: populate each list with the respective data
+            //FIXME: remove this as aircraft data gets populated the first time the user gets assignments for a makemodel 
             GetAircraftItems(AircraftMakeModelStrEnum.Boeing737_800);
 
-            fseDataExport = new FSEDataExport();
+            fseDataExport = new FSEDataExport(userKey);
 
         }
 
@@ -53,7 +53,7 @@ namespace FSEDataFeed
         /// <param name="makeModel"></param>
         void GetAircraftItems(string makeModel)
         {
-            //TODO: implement GetAircraftItems
+            //TODO: delete
         }
 
         /// <summary>
@@ -178,6 +178,7 @@ namespace FSEDataFeed
                     */
                 }
 
+                //TODO: consider saving this massive list of assignments off somewhere so that they can be retrived later?
                 //Query FSE Data Feed for list of jobs from each ICAO that has makeModel - query = ICAO Jobs From            
                 IcaoJobsFrom ICAOAssignments = fseDataExport.GetIcaoJobsFrom(AirportsWithMatchingPlane);
                 
