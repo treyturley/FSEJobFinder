@@ -13,21 +13,30 @@ namespace FSEDataFeedAPI.Services
      */
 
 
+
     public class FSEDataService
     {
-        private FSEDataAPI instance;
+        private Dictionary<string, FSEDataAPI> fseServices;
 
-        private FSEDataService()
+        public FSEDataService()
         {
-            if(instance == null)
-            {
-                instance = new FSEDataAPI();    
-            }
+            fseServices = new();
         }
 
-        public FSEDataAPI GetInstance()
+        public FSEDataAPI GetService(string userKey)
         {
-            return instance;
+            // FIXME: make sure userkey is not null or empty
+
+            if (fseServices.ContainsKey(userKey))
+            {
+                return fseServices[userKey];
+            } else
+            {
+                FSEDataAPI service = new(userKey);
+                fseServices.Add(userKey, service);
+                return service;
+            }
+
         }
     }
 }
