@@ -13,7 +13,7 @@ namespace FSEDataFeedAPI.Services
      */
 
 
-
+#pragma warning disable CS1591
     public class FSEDataService
     {
         private Dictionary<string, FSEDataAPI> fseServices;
@@ -39,4 +39,5 @@ namespace FSEDataFeedAPI.Services
 
         }
     }
+#pragma warning restore CS1591
 }
