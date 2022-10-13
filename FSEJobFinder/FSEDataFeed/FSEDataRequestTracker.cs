@@ -48,7 +48,7 @@ namespace FSEDataFeed
             return requests;
         }
 
-        
+
         /// <summary>
         /// Reuqests to FSE Data API are rate limited. check to see if we have exceeded that rate yet or if we can make another request.
         /// </summary>
@@ -57,7 +57,7 @@ namespace FSEDataFeed
         {
             //if we have less than 40 requests in the last 6 hours and less than 10 requests 
             //in the last 60 seconds then we can make another requests           
-            if(RequestsInSecondWindow() < BIG_WINDOW_LIMIT && RequestsInFirstWindow() < SMALL_WINDOW_LIMIT)
+            if (RequestsInSecondWindow() < BIG_WINDOW_LIMIT && RequestsInFirstWindow() < SMALL_WINDOW_LIMIT)
             {
                 return true;
             }
@@ -91,7 +91,7 @@ namespace FSEDataFeed
 
                 //TODO: instead of just saying we ahve to wait the full limit,
                 //calculate when the oldest request will roll out of the window and return how long until that happens
-                if(RequestsInSecondWindow() == BIG_WINDOW_LIMIT)
+                if (RequestsInSecondWindow() == BIG_WINDOW_LIMIT)
                 {
                     return TimeSpan.FromHours(6);
                 }
@@ -108,7 +108,7 @@ namespace FSEDataFeed
         /// </summary>
         private void PruneRequests()
         {
-            if(requests.Count != 0)
+            if (requests.Count != 0)
             {
                 //start and end times for the second rolling window (40 hits in 6 hours)
                 DateTime end = DateTime.Now;
@@ -125,7 +125,8 @@ namespace FSEDataFeed
                         if (!request.IsInTimeWindow(start, end))
                         {
                             requestsToRemove.Add(request);
-                        } else
+                        }
+                        else
                         {
                             writer.WriteLine(request.ToString());
                         }
@@ -142,13 +143,13 @@ namespace FSEDataFeed
         /// Load any existing requests from previous program executions.
         /// </summary>
         private void LoadRequests()
-        {   
+        {
             //See if the file exists
             if (File.Exists(RequestsfilePath))
             {
                 string[] requestObjects = File.ReadAllLines(RequestsfilePath);
                 //read line by line
-                foreach(string requestObjectStr in requestObjects)
+                foreach (string requestObjectStr in requestObjects)
                 {
                     //parse into a request
                     requests.Add(new FSEDataRequest(requestObjectStr));
@@ -163,7 +164,7 @@ namespace FSEDataFeed
         public void LogRequest(FSEDataRequest request)
         {
             using (StreamWriter writer = new StreamWriter(RequestsfilePath, true))
-            {   
+            {
                 writer.WriteLine(request.ToString());
             }
         }
@@ -174,7 +175,11 @@ namespace FSEDataFeed
         /// <param name="request">The FSE Data Request that is getting logged.</param>
         public void LogResponse(FSEDataRequest request)
         {
-            string responseFilePath = Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME + "\\" + request.GetRequestType() + "_" + request.GetTimestamp().ToString(FSEDataRequest.TIME_FORMAT) + ".xml";
+            string responseFilePath = Directory.GetCurrentDirectory() +
+                RESPONSE_DIRECTORY_NAME + "\\" +
+                request.GetRequestType() + "_" + request.GetTimestamp().ToString(FSEDataRequest.TIME_FORMAT) +
+                ".xml";
+
             using (StreamWriter writer = new StreamWriter(responseFilePath, false))
             {
                 writer.WriteLine(request.getResponseData());
@@ -201,7 +206,8 @@ namespace FSEDataFeed
                 foreach (FSEDataRequest request in requests)
                 {
                     //check to see if this request was fired off in the last 10 minutes
-                    if((request.GetTimestamp() > start ) && (request.GetTimestamp() < end)){
+                    if ((request.GetTimestamp() > start) && (request.GetTimestamp() < end))
+                    {
                         requestCount++;
                     }
                 }
@@ -245,9 +251,9 @@ namespace FSEDataFeed
             DateTime oldestDateTime = DateTime.Now;
             FSEDataRequest oldestRequest = null;
 
-            foreach(FSEDataRequest request in requests)
+            foreach (FSEDataRequest request in requests)
             {
-                if(request.GetTimestamp().CompareTo(oldestDateTime) < 0)
+                if (request.GetTimestamp().CompareTo(oldestDateTime) < 0)
                 {
                     oldestRequest = request;
                     oldestDateTime = oldestRequest.GetTimestamp();
@@ -260,7 +266,8 @@ namespace FSEDataFeed
 
         private void CreateResponseDirectory()
         {
-            if (!Directory.Exists(Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME)){
+            if (!Directory.Exists(Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME))
+            {
                 Directory.CreateDirectory(Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME);
             }
         }
@@ -268,12 +275,12 @@ namespace FSEDataFeed
         // override object.Equals
         public override bool Equals(object obj)
         {
-           
+
             if (obj == null || GetType() != obj.GetType())
             {
                 return false;
             }
-            
+
             FSEDataRequestTracker objAsDataRequestTracker = obj as FSEDataRequestTracker;
             if (objAsDataRequestTracker == null)
             {
@@ -286,7 +293,7 @@ namespace FSEDataFeed
         public bool Equals(FSEDataRequestTracker other)
         {
             bool result = true;
-            if(requests.Count == other.requests.Count)
+            if (requests.Count == other.requests.Count)
             {
                 //See if other contains the same requests
                 foreach (FSEDataRequest request in requests)
@@ -307,7 +314,8 @@ namespace FSEDataFeed
         // override object.GetHashCode
         public override int GetHashCode()
         {
-            //trying out a hashcode algorithm seen here: https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-overriding-gethashcode
+            //trying out a hashcode algorithm seen
+            //here: https://stackoverflow.com/questions/263400/what-is-the-best-algorithm-for-overriding-gethashcode
             unchecked
             {
                 int hash = 17;
@@ -316,7 +324,7 @@ namespace FSEDataFeed
                 hash = hash * 23 + BIG_WINDOW_LIMIT;
                 hash = hash * 23 + requestsFileName.GetHashCode();
                 hash = hash * 23 + RequestsfilePath.GetHashCode();
-                
+
                 return hash;
             }
         }
