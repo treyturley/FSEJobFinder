@@ -160,6 +160,8 @@ namespace FSEDataFeed
                 //Get the current list of all aicraft that match the Make and Model - Query FSE Data Feed'
                 AircraftItems allAircraft = fseDataExport.GetAircraftByMakeModel(makeModel);
 
+                if (allAircraft != null)
+                {
                 //build the list of ICAO that have the plane we want
                 List<string> AirportsWithMatchingPlane = new List<string>();
                 foreach (Aircraft aircraft in allAircraft.AircraftList)
@@ -192,6 +194,7 @@ namespace FSEDataFeed
                 {
                     availableAssignments = ICAOAssignments.getCommercialJobs(allAircraft);
                 }
+            }
             }
 
             //TODO: refactor this so we dont need to use an if statement on the madeModel. This should be handled with inheritance             
