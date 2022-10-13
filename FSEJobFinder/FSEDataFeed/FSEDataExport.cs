@@ -93,11 +93,23 @@ namespace FSEDataFeed
                     FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
                     requestTracker.AddRequest(request);
 
-                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
-                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                    using (Stream stream = response.GetResponseStream())
+                    try
                     {
-                        aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+
+                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                        using (Stream responseStream = response.GetResponseStream())
+                        using (MemoryStream memoryStream = new MemoryStream())
+                        {
+                            //copy to mem stream
+                            responseStream.CopyTo(memoryStream);
+
+                            //set back to beginning
+                            memoryStream.Seek(0, SeekOrigin.Begin);
+
+                            try
+                    {
+                                aircraftItems = (AircraftItems)serializer.Deserialize(memoryStream);
 
                         //since we got a response and were able to deserialize it, lets log it
                         using (StringWriter strWriter = new StringWriter())
@@ -107,6 +119,28 @@ namespace FSEDataFeed
                         }
                                 requestTracker.LogRequest(request);
                                 requestTracker.LogResponse(request);
+                    }
+                            catch (Exception e)
+                            {   
+                                memoryStream.Seek(0, SeekOrigin.Begin);
+                                using (StreamWriter w = File.AppendText("FSEData.log"))
+                                using (StreamReader r = new StreamReader(memoryStream))
+                                {
+                                    w.WriteLine(DateTime.Now + ": Error in GetAircraftByMakeModel. Failed to deserialize the response from FSE. Response was:");
+                                    w.WriteLine(r.ReadToEnd().Trim());
+                                    w.WriteLine("Exception Msg: " + e.Message);
+                                }
+                            }
+                }
+            }
+                    catch (Exception e)
+                    {
+                        using (StreamWriter w = File.AppendText("FSEData.log"))
+                        {
+                            //some error occured
+                            w.WriteLine(DateTime.Now + ": Error in GetAircraftByMakeModel. Request/Response failed.");
+                            w.WriteLine(e.Message.Trim());
+                        }
                     }
                 }
             }
