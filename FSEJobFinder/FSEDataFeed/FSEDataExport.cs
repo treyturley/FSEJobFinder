@@ -105,8 +105,8 @@ namespace FSEDataFeed
                             serializer.Serialize(strWriter, aircraftItems);
                             request.setResponseData(strWriter.ToString());
                         }
-                        requestTracker.SaveRequest(request);
-                        requestTracker.SaveResponse(request);
+                                requestTracker.LogRequest(request);
+                                requestTracker.LogResponse(request);
                     }
                 }
             }
@@ -175,8 +175,8 @@ namespace FSEDataFeed
                             serializer.Serialize(strWriter, availableJobs);
                             request.setResponseData(strWriter.ToString());
                         }
-                        requestTracker.SaveRequest(request);
-                        requestTracker.SaveResponse(request);
+                        requestTracker.LogRequest(request);
+                        requestTracker.LogResponse(request);
                     }
                 }
             }

@@ -156,7 +156,11 @@ namespace FSEDataFeed
             }
         }
 
-        public void SaveRequest(FSEDataRequest request)
+        /// <summary>
+        /// Logs the request details to the FSE Data Requests log file.
+        /// </summary>
+        /// <param name="request"></param>
+        public void LogRequest(FSEDataRequest request)
         {
             using (StreamWriter writer = new StreamWriter(RequestsfilePath, true))
             {   
@@ -165,10 +169,10 @@ namespace FSEDataFeed
         }
 
         /// <summary>
-        /// Saves the response data in a file in the response directory.
+        /// Logs the complete response data for this request to a file in the response directory.
         /// </summary>
-        /// <param name="request"></param>
-        public void SaveResponse(FSEDataRequest request)
+        /// <param name="request">The FSE Data Request that is getting logged.</param>
+        public void LogResponse(FSEDataRequest request)
         {
             string responseFilePath = Directory.GetCurrentDirectory() + RESPONSE_DIRECTORY_NAME + "\\" + request.GetRequestType() + "_" + request.GetTimestamp().ToString(FSEDataRequest.TIME_FORMAT) + ".xml";
             using (StreamWriter writer = new StreamWriter(responseFilePath, false))
