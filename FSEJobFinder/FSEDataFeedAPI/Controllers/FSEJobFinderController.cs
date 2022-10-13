@@ -32,10 +32,13 @@ namespace FSEDataFeedAPI.Controllers
         /// <param name="aircraft">The commercial aircraft to find jobs for.</param>
         /// <param name="count">The number of jobs to get back or -1 to get all available jobs.</param>
         /// <returns>A JsonResult containing the available jobs.</returns>
-        /// <response code="200">Json body describing the available jobs. Jobs are sorted by payout in descending order.</response>
-        /// /// <response code="400">Error code describing the request error.</response>
-        [HttpGet("/api/v1/availableJobs/{aircraft}")]
-        public ActionResult GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int count = -1)
+        /// <response code="200">Json body describing the available jobs. 
+        /// Jobs are sorted by payout in descending order.</response>
+        /// <response code="400">Error code describing the request error.</response>
+        [HttpGet("v1/jobs/{aircraft}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<Assignment>))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
         {
             string makeModelStr = "";
             string userKey = Request.Headers["fse-access-key"];
@@ -48,8 +51,7 @@ namespace FSEDataFeedAPI.Controllers
             else
             {
                 // When make model not found we can just return an empty json obj and a 404?
-
-                return BadRequest(new object());
+                return NotFound(new {});
             }
 
             // validate userKey
@@ -62,18 +64,21 @@ namespace FSEDataFeedAPI.Controllers
                 // can create our own json response like this!
                 return BadRequest(new
                 {
-                    message = "fse-access-key header missing or invalid",
+                    error = "fse-access-key header missing or invalid",
                     headerExample = "fse-access-key:<user-fse-access-key>",
                     note = "Access key can be found by logging into the " +
                     "FSE Game World and selecting Data Feeds from the " +
-                    "Home menu dropdown. see https://www.fseconomy.net/welcome"
+                    "Home menu dropdown. See https://www.fseconomy.net/welcome"
                 });
             }
 
-            // Validate count
-            if (count < 1 && count != -1)
+            // Validate limit
+            if (limit < 1 && limit != -1)
             {
-                return new JsonResult(BadRequest("Count must be positive or not included at all"));
+                return BadRequest(new
+                {
+                    errorMsg = "Limit must be positive or not included at all"
+                });
             }
 
             //TODO: Revert to real jsonresult once testing completes
