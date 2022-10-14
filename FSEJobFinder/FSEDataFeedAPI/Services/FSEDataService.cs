@@ -1,4 +1,5 @@
 ﻿using FSEDataFeed;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FSEDataFeedAPI.Services
 {
@@ -37,6 +38,21 @@ namespace FSEDataFeedAPI.Services
                 return service;
             }
 
+        }
+
+        /// <summary>
+        /// Checks to see if the userkey is valid.
+        /// </summary>
+        /// <param name="userKey">The userkey to validate.</param>
+        /// <returns>True if the userkey is not null and not an empty string.</returns>
+        public bool userKeyIsValid(string userKey)
+        {
+            bool result = false;
+            if(userKey != null && userKey != string.Empty)
+            {
+                result = true;
+            }
+            return result;
         }
     }
 #pragma warning restore CS1591
