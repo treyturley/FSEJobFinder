@@ -1,10 +1,11 @@
 using FSEDataFeed;
 using FSEDataFeedAPI.Services;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FSEDataFeedAPI.Controllers
 {
-
     /// <summary>
     /// Handles requests to the FSEJobFinder API.
     /// </summary>
@@ -99,5 +100,28 @@ namespace FSEDataFeedAPI.Controllers
         //    //TODO: validate makeModel
         //    return new JsonResult(fseDataService.GetService(userKey).GetUSAssignments(makeModel));
         //}
+
+        /// <summary>
+        /// In Prod env, this handles errors that resulted in excpetions.
+        /// Instead of sending the user the exception details like when in dev mode,
+        /// this just sends a ProblemDetails response to the client.
+        /// </summary>
+        /// <returns></returns>
+        [Route("/error")]
+        [ApiExplorerSettings(IgnoreApi = true)]
+        public IActionResult HandleError()
+        {
+            var excpetionHandlerFeature = HttpContext.Features.Get<IExceptionHandlerFeature>()!;
+            var requestFeature = HttpContext.Features.Get<IHttpRequestFeature>()!;
+            using (StreamWriter w = System.IO.File.AppendText("FSEData.log"))
+            {
+                string errorMsg = string.Empty;
+                errorMsg += DateTime.Now + " - Error - Request: " + requestFeature.RawTarget + ", ErrorMsg: " + excpetionHandlerFeature.Error;
+
+                Console.Error.WriteLine(errorMsg);
+                w.WriteLine(errorMsg);
+            }
+            return Problem();
+        }
     }
 }

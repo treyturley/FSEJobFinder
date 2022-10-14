@@ -40,6 +40,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    //in prod, errors that cause exceptions go to this exception handler.
+    app.UseExceptionHandler("/error");
+}
 
 app.UseHttpsRedirection();
 
