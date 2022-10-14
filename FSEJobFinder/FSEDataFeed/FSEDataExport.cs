@@ -126,7 +126,7 @@ namespace FSEDataFeed
                                 using (StreamWriter w = File.AppendText("FSEData.log"))
                                 using (StreamReader r = new StreamReader(memoryStream))
                                 {
-                                    w.WriteLine(DateTime.Now + ": Error in GetAircraftByMakeModel. Failed to deserialize the response from FSE. Response was:");
+                                    w.WriteLine(DateTime.Now + " - Error - Method: GetAircraftByMakeModel, ErrorMessage: Failed to deserialize the response from FSE. Response was:");
                                     w.WriteLine(r.ReadToEnd().Trim());
                                     w.WriteLine("Exception Msg: " + e.Message);
                                 }
