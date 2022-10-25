@@ -29,6 +29,18 @@ namespace FSEDataFeedAPI.Controllers
         }
 
         /// <summary>
+        /// Gets a dictionary containing the MakeModel to string mappings.
+        /// </summary>
+        /// <returns>A JsonResult with a dictionary which maps makemodel enums to readable strings.</returns>
+        /// <response code="200">Json body containing the dictionar which maps the makemodel enum to readable strings.</response>
+        [HttpGet("v2/makemodels")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public ActionResult<Dictionary<MakeModel, string>> GetMakeModels_V2()
+        {
+            return new JsonResult(AircraftMakeModel.GetMakeModelDictionary());
+        }
+
+        /// <summary>
         /// Gets available assignments for the specified aircraft.
         /// </summary>
         /// <param name="aircraft">The commercial aircraft to find assignments for.</param>
