@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -7,36 +8,59 @@ namespace FSEDataFeed
     public static class AircraftMakeModel
     {
         public enum MakeModel
-        {   
+        {
             AirbusA320_MSFS,
             Boeing737_800,
             Boeing747_400
         }
 
-        private static Dictionary<string, MakeModel> MakeModelDict = new Dictionary<string, MakeModel>
+        private static Dictionary<MakeModel, string> MakeModelToString = new Dictionary<MakeModel, string>
         {
-            { "Airbus A320 (MSFS)", MakeModel.AirbusA320_MSFS },
-            { "Boeing 737-800", MakeModel.Boeing737_800 },
-            { "Boeing 747-400", MakeModel.Boeing747_400 }
+            { MakeModel.AirbusA320_MSFS, "Airbus A320 (MSFS)" },
+            { MakeModel.Boeing737_800, "Boeing 737-800" },
+            { MakeModel.Boeing747_400, "Boeing 747-400" }
         };
 
-        public static bool TryParse(string makeModelStr, out MakeModel result)
+        /// <summary>
+        /// Get makeModel enum from string.
+        /// </summary>
+        /// <param name="makeModelStr"></param>
+        /// <param name="result"></param>
+        /// <returns></returns>
+        //public static bool TryParse(string makeModelStr, out MakeModel result)
+        //{
+        //    if (MakeModelDict.TryGetValue(makeModelStr, out result))
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
+
+        /// <summary>
+        /// Get MakeModel string representation for the given MakeModel enum.
+        /// </summary>
+        /// <param name="makeModel"></param>
+        /// <returns></returns>
+        public static string GetMakeModelString(MakeModel makeModel)
         {
-            if (MakeModelDict.TryGetValue(makeModelStr, out result)){
-                return true;
-            }
-            return false;
+            return MakeModelToString[makeModel];
         }
 
-        public static string MakeModelAsString(MakeModel makeModel)
+        //public static List<string> ListMakeModels()
+        //{
+        //    List<string> result = new List<string>();
+
+        //    foreach (string makeModel in MakeModelDict.Keys)
+        //    {
+        //        result.Add(makeModel);
+        //    }
+
+        //    return result;
+        //}
+
+        public static Dictionary<MakeModel, string> GetMakeModelDictionary()
         {
-            string result = "";
-
-            // TODO: do some testing around this to see what happens when invalid makemodels come in
-            result = MakeModelDict.FirstOrDefault(item => item.Value == makeModel).Key;
-
-
-            return result;
+            return MakeModelToString;
         }
     }
 
