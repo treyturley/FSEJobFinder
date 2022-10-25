@@ -43,7 +43,7 @@ namespace FSEDataFeedAPI.Controllers
         public ActionResult<Assignment> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
         {
             //TODO: consider adding additional params to allow filtering/sorting/pagination
-            string makeModelStr = AircraftMakeModel.MakeModelAsString(aircraft);
+            string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
             string userKey = Request.Headers["fse-access-key"];
 
             // validate userKey
@@ -75,7 +75,7 @@ namespace FSEDataFeedAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Assignment> GetBestCommercialAssignment(AircraftMakeModel.MakeModel aircraft)
         {
-            string makeModelStr = AircraftMakeModel.MakeModelAsString(aircraft);
+            string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
             string userKey = Request.Headers["fse-access-key"];
 
             // validate userKey
@@ -98,7 +98,7 @@ namespace FSEDataFeedAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<Assignment> GetUSCommercialAssignments(AircraftMakeModel.MakeModel aircraft)
         {
-            string makeModelStr = AircraftMakeModel.MakeModelAsString(aircraft);
+            string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
             string userKey = Request.Headers["fse-access-key"];
 
             // validate userKey
