@@ -22,7 +22,8 @@ namespace FSEDataFeed.Tests
 
             string makeModel = "Boeing 737-800";
 
-            FSEDataAPI fse = new FSEDataAPI();
+            //TODO: Use my key for testing?
+            FSEDataAPI fse = new FSEDataAPI("userkey");
             //TODO: make a better assert using a list of assignments that is then fed into the get best method
             //TODO: make sure this is actually return the best and not the best minus one due to index weirdness
             Assignment actualBestAssignment = fse.getBestCommercialAssignment(makeModel);

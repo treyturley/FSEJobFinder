@@ -4,9 +4,25 @@ using System.Reflection;
 
 using FSEDataFeedAPI;
 
-// Web API Docs here:
-// https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio
-// left off from https://learn.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-6.0&tabs=visual-studio#describe-response-types
+// Web API Docs here:https://learn.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-6.0
+
+// TODO: review logging
+// https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-6.0
+
+// TODO: review caching
+// https://learn.microsoft.com/en-us/aspnet/core/performance/caching/memory?view=aspnetcore-6.0
+
+// TODO: review HTTPS docs
+// https://learn.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?source=recommendations&view=aspnetcore-6.0&tabs=visual-studio
+// https://learn.microsoft.com/en-us/aspnet/core/security/docker-https?view=aspnetcore-6.0
+
+// TODO: more help with swagger doc
+// https://learn.microsoft.com/en-us/training/modules/improve-api-developer-experience-with-swagger/?ranMID=46131&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-ReOh2nMazBzo9sGFOckRRw&epi=a1LgFw09t88-ReOh2nMazBzo9sGFOckRRw&irgwc=1&OCID=AID2200057_aff_7806_1243925&tduid=(ir__d3pswffmyckf6gzkowcr2wotf32xqrrarh1g0ybx00)(7806)(1243925)(a1LgFw09t88-ReOh2nMazBzo9sGFOckRRw)()&irclickid=_d3pswffmyckf6gzkowcr2wotf32xqrrarh1g0ybx00
+
+// NOTE: to allow the app to be accessed by IP, run from commandline with:
+//       dotnet run --urls http://0.0.0.0:7152
+
+// NOTE: https://letsencrypt.org/ 
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +59,9 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+// Toggle envs
+//app.Environment.EnvironmentName = "Production";
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -95,9 +95,9 @@ namespace FSEDataFeed
 
                     try
                     {
-                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
+                        XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
 
-                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                        using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                         using (Stream responseStream = response.GetResponseStream())
                         using (MemoryStream memoryStream = new MemoryStream())
                         {
@@ -108,18 +108,18 @@ namespace FSEDataFeed
                             memoryStream.Seek(0, SeekOrigin.Begin);
 
                             try
-                    {
+                            {
                                 aircraftItems = (AircraftItems)serializer.Deserialize(memoryStream);
 
-                        //since we got a response and were able to deserialize it, lets log it
-                        using (StringWriter strWriter = new StringWriter())
-                        {
-                            serializer.Serialize(strWriter, aircraftItems);
-                            request.setResponseData(strWriter.ToString());
-                        }
+                                //since we got a response and were able to deserialize it, lets log it
+                                using (StringWriter strWriter = new StringWriter())
+                                {
+                                    serializer.Serialize(strWriter, aircraftItems);
+                                    request.setResponseData(strWriter.ToString());
+                                }
                                 requestTracker.LogRequest(request);
                                 requestTracker.LogResponse(request);
-                    }
+                            }
                             catch (Exception e)
                             {   
                                 memoryStream.Seek(0, SeekOrigin.Begin);
@@ -131,8 +131,8 @@ namespace FSEDataFeed
                                     w.WriteLine("Exception Msg: " + e.Message);
                                 }
                             }
-                }
-            }
+                        }
+                    }
                     catch (Exception e)
                     {
                         using (StreamWriter w = File.AppendText("FSEData.log"))
@@ -196,6 +196,8 @@ namespace FSEDataFeed
 
                     FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, url);
                     requestTracker.AddRequest(request);
+
+                    //TODO: Wrap in try/catch and handle error response and exceptions
 
                     XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                     using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())

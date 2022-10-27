@@ -8,6 +8,12 @@ namespace FSEJobfinderConsoleApp
     {
         //TODO: migrate to .net 3.0
         //https://docs.microsoft.com/en-us/cpp/build/how-to-modify-the-target-framework-and-platform-toolset?view=msvc-160
+
+        //TODO: manage userkey as a user secret
+        //https://learn.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows
+        //simple secrets in console app:https://makolyte.com/how-to-add-user-secrets-in-a-dotnetcore-console-app/
+        //reading a single secret: https://makolyte.com/csharp-how-to-read-custom-configuration-from-appsettings-json/#Reading_a_single_value_from_appsettingsjson
+
         static void Main(string[] args)
         {
             printWelcomeInstructions();
