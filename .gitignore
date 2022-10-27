@@ -344,3 +344,8 @@ healthchecksdb
 /FSEJobFinder/FSEDataFeed/StaticFiles/UserKey.txt
 /FSEJobFinder/FSEDataFeedAPI/FSEDataRequests.txt
 /FSEJobFinder/FSEDataFeedAPI/fse_responses
+/FSEJobFinder/FSEDataFeed.backup
+/FSEJobFinder/FSEDataFeedTests.backup
+/FSEJobFinder/FSEDataFeedTests/AnalysisReport.sarif
+/FSEJobFinder/FSEDataFeed/upgrade-assistant.clef
+/FSEJobFinder/FSEDataFeedTests/upgrade-assistant.clef
