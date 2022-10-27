@@ -17,7 +17,7 @@ namespace FSEDataFeedAPI.Controllers
     {
         private FSEDataService fseDataService = new();
 
-        //TODO: start logging requests
+        // TODO: start logging requests
         private readonly ILogger<FSEJobFinderController> _logger;
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace FSEDataFeedAPI.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<List<Assignment>> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
         {
-            //TODO: consider adding additional params to allow filtering/sorting/pagination
+            // TODO: consider adding additional params to allow filtering/sorting/pagination
             string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
             string userKey = Request.Headers["fse-access-key"];
 
