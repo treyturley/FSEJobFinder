@@ -96,7 +96,26 @@ namespace FSEDataFeedAPI.Controllers
             {
                 return InvalidUserKeyResponse();
             }
-            return new JsonResult(fseDataService.GetService(userKey).getBestCommercialAssignment(makeModelStr));
+            //return new JsonResult(fseDataService.GetService(userKey).getBestCommercialAssignment(makeModelStr));
+
+            Thread.Sleep(2500);
+            return new JsonResult(new
+            {
+                aircraftId="47911",
+                amount="115",
+                commodity="Pax - Airline Pilot for Hire",
+                expireDateTime="2022-10-27 01:31:12",
+                expires="20 hrs",
+                express="True",
+                fromIcao="KDFW",
+                id="366558149",
+                jobType="All-In",
+                location="KDFW",
+                pay="15827.00",
+                ptAssignment="false",
+                toIcao="KAUS",
+                unitType="passengers"
+            });
         }
 
         /// <summary>
