@@ -53,7 +53,7 @@ namespace FSEDataFeedAPI.Controllers
         [HttpGet("v1/assignments/{aircraft}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Assignment> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
+        public ActionResult<List<Assignment>> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
         {
             //TODO: consider adding additional params to allow filtering/sorting/pagination
             string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
@@ -109,7 +109,7 @@ namespace FSEDataFeedAPI.Controllers
         [HttpGet("v1/assignmentsFromOrToUS/{aircraft}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<Assignment> GetUSCommercialAssignments(AircraftMakeModel.MakeModel aircraft)
+        public ActionResult<List<Assignment>> GetUSCommercialAssignments(AircraftMakeModel.MakeModel aircraft)
         {
             string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
             string userKey = Request.Headers["fse-access-key"];
