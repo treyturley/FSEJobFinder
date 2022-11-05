@@ -16,8 +16,8 @@ namespace FSEDataFeed
     /// "Timing: The Access Key can hit the server 10 times within any rolling 60 second window, including multiple simultaneous hits. 
     /// Read Access Keys are also limited to 40 hits within a 6 hour rolling window. "
     /// </summary>
-    public class FSEDataExport  
-    {   
+    public class FSEDataExport
+    {
         private string userKey;
         private string FSEEndpoint;
 
@@ -30,16 +30,21 @@ namespace FSEDataFeed
         /// <summary>
         /// Default FSEDataExport constructor. Debug is disabled by default.
         /// </summary>
-        public FSEDataExport()
+        public FSEDataExport(string userKey)
         {
             //by default we should use live data
             debugEnabled = false;
 
+            //TODO: This fails when run from the Rest API project
+            //FIXME: remove hardcoded user key, should instead be passed to constructor
             //get the user key
-            GetUserKey();
 
-            FSEEndpoint = @"http://server.fseconomy.net/data?userkey=" + userKey + "&format=xml";
-            
+            // TODO: Delete GetUserKey method
+            //GetUserKey();
+            this.userKey = userKey;
+
+            FSEEndpoint = @"http://server.fseconomy.net/data?userkey=" + this.userKey + "&format=xml";
+
             requestTracker = new FSEDataRequestTracker();
         }
 
@@ -70,7 +75,7 @@ namespace FSEDataFeed
         /// </summary>
         /// <param name="makeModel">the airplane we want to query FSE for.</param>
         /// <returns>the AircraftItems which is a list of the aircraft in FSE that match the MakeModel. An empty list if there are no aircraft. Null if there was an error.</returns>
-        public  AircraftItems GetAircraftByMakeModel(string makeModel)
+        public AircraftItems GetAircraftByMakeModel(string makeModel)
         {
             AircraftItems aircraftItems = null;
 
@@ -87,18 +92,56 @@ namespace FSEDataFeed
                 {
                     FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.Aircraft_By_MakeModel, url);
                     requestTracker.AddRequest(request);
-                    
-                    XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
-                    using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
-                    using (Stream stream = response.GetResponseStream())
+
+                    try
                     {
-                        aircraftItems = (AircraftItems)serializer.Deserialize(stream);
+                        XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
 
-                        //since we got a response and were able to deserialize it, lets log it
-                        requestTracker.SaveRequest(request);
+                        using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+                        using (Stream responseStream = response.GetResponseStream())
+                        using (MemoryStream memoryStream = new MemoryStream())
+                        {
+                            //copy to mem stream
+                            responseStream.CopyTo(memoryStream);
+
+                            //set back to beginning
+                            memoryStream.Seek(0, SeekOrigin.Begin);
+
+                            try
+                            {
+                                aircraftItems = (AircraftItems)serializer.Deserialize(memoryStream);
+
+                                //since we got a response and were able to deserialize it, lets log it
+                                using (StringWriter strWriter = new StringWriter())
+                                {
+                                    serializer.Serialize(strWriter, aircraftItems);
+                                    request.setResponseData(strWriter.ToString());
+                                }
+                                requestTracker.LogRequest(request);
+                                requestTracker.LogResponse(request);
+                            }
+                            catch (Exception e)
+                            {   
+                                memoryStream.Seek(0, SeekOrigin.Begin);
+                                using (StreamWriter w = File.AppendText("FSEData.log"))
+                                using (StreamReader r = new StreamReader(memoryStream))
+                                {
+                                    w.WriteLine(DateTime.Now + " - Error - Method: GetAircraftByMakeModel, ErrorMessage: Failed to deserialize the response from FSE. Response was:");
+                                    w.WriteLine(r.ReadToEnd().Trim());
+                                    w.WriteLine("Exception Msg: " + e.Message);
+                                }
+                            }
+                        }
                     }
-
-                    //TODO: logging for the response could go here
+                    catch (Exception e)
+                    {
+                        using (StreamWriter w = File.AppendText("FSEData.log"))
+                        {
+                            //some error occured
+                            w.WriteLine(DateTime.Now + ": Error in GetAircraftByMakeModel. Request/Response failed.");
+                            w.WriteLine(e.Message.Trim());
+                        }
+                    }
                 }
             }
             else
@@ -108,7 +151,7 @@ namespace FSEDataFeed
                 XmlSerializer serializer = new XmlSerializer(typeof(AircraftItems));
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {
-                    aircraftItems = (AircraftItems)serializer.Deserialize(fileStream);                    
+                    aircraftItems = (AircraftItems)serializer.Deserialize(fileStream);
                 }
             }
             return aircraftItems;
@@ -120,21 +163,21 @@ namespace FSEDataFeed
             IcaoJobsFrom availableJobs = null;
 
             if (!debugEnabled)
-            {   
+            {
                 string allICAOs = "";
 
-                if(ICAOs.Count == 0)
+                if (ICAOs.Count == 0)
                 {
                     //TODO: throw an error or maybe return null because there are no ICAOs to lookup jobs for
                 }
-                else if(ICAOs.Count == 1)
+                else if (ICAOs.Count == 1)
                 {
                     //TODO: handle case where there is only one ICAO
                     //build an ICAO string with the one ICAO written out 3 times to get around the 3 ICAO min for this request
                 }
                 else
                 {
-                    foreach(string str in ICAOs)
+                    foreach (string str in ICAOs)
                     {
                         allICAOs += str + "-";
                     }
@@ -154,13 +197,22 @@ namespace FSEDataFeed
                     FSEDataRequest request = new FSEDataRequest(FSEDataRequestType.ICAO_Jobs_From, url);
                     requestTracker.AddRequest(request);
 
+                    //TODO: Wrap in try/catch and handle error response and exceptions
+
                     XmlSerializer serializer = new XmlSerializer(typeof(IcaoJobsFrom));
                     using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
                     using (Stream stream = response.GetResponseStream())
                     {
                         availableJobs = (IcaoJobsFrom)serializer.Deserialize(stream);
+
                         //since we got a response and were able to deserialize it, lets log it
-                        requestTracker.SaveRequest(request);
+                        using (StringWriter strWriter = new StringWriter())
+                        {
+                            serializer.Serialize(strWriter, availableJobs);
+                            request.setResponseData(strWriter.ToString());
+                        }
+                        requestTracker.LogRequest(request);
+                        requestTracker.LogResponse(request);
                     }
                 }
             }
@@ -172,7 +224,7 @@ namespace FSEDataFeed
                 using (FileStream fileStream = new FileStream(filePath, FileMode.Open))
                 {
                     availableJobs = (IcaoJobsFrom)serializer.Deserialize(fileStream);
-                }                
+                }
             }
             return availableJobs;
         }

@@ -34,7 +34,7 @@ namespace FSEDataFeed.Tests
 
             foreach (FSEDataRequest request in requests.getRequests())
             {
-                requests.SaveRequest(request);
+                requests.LogRequest(request);
             }
 
             //create a new request tracker that will read in the saved requests

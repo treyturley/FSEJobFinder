@@ -1,0 +1,9 @@
+Some examples of the docker commands to get the project up and running.
+
+To build the image, from the root folder of the FSEDataFeedAPI project (where the csproj file is) run:
+docker build -f Dockerfile -t fse-datafeed-api ..
+
+To start a container:
+docker run --name fse-api -p 5005:80 -d fse-datafeed-api
+
+application should now be running and accessible on the host machine at port 5005.
