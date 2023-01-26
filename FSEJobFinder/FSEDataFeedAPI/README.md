@@ -25,3 +25,6 @@ Response: JSON body describing the best assignment for the give aircraft
 Endpoint: GET /api/FSEJobFinder/v1/assignmentsFromOrToUS/{aircraft}
 
 Response: JSON body with a list of assignments for the give aircraft that start or end in the US
+
+## Swagger
+![FSEDataFeedAPI_Swagger](https://user-images.githubusercontent.com/81778542/214963887-7e561be1-c55c-4bf3-b4bb-1556fc580108.PNG)
