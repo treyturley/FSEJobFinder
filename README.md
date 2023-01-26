@@ -1,5 +1,5 @@
 # Project Info
-Welcome to FSE Job Finder. This project started as a simple C# console app that would pull job and airplane data from the FSEconomy API. The project stayed like this until I started exploring full stack development. Now an ASP.NET Web API called [FSEDataFeedAPI](https://github.com/treyturley/FSEJobFinder/tree/dev/FSEJobFinder/FSEDataFeedAPI) has been added along with a small [React frontend](https://github.com/treyturley/fsejobfinder-react) which makes it easy to quickly check for available jobs.
+Welcome to FSE Job Finder. This project started as a simple C# console app that would pull job and airplane data from the FSEconomy API. Now an ASP.NET Web API called [FSEDataFeedAPI](https://github.com/treyturley/FSEJobFinder/tree/dev/FSEJobFinder/FSEDataFeedAPI) has been added along with a small [React frontend](https://github.com/treyturley/fsejobfinder-react) which makes it easy to quickly check for available jobs.
 
 The app is currently hosted at https://treyturley.com/fse-job-finder
 
