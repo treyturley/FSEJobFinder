@@ -82,7 +82,16 @@ else
 }
 
 //app.UseHttpsRedirection();
-Console.WriteLine(Environment.GetEnvironmentVariable("FSEJobFinder_ConnectionString"));
+Console.WriteLine("getting conn string from env...");
+string connstr = Environment.GetEnvironmentVariable("FSEJobFinder_ConnectionString");
+if (connstr == null || connstr.Length == 0)
+{
+    Console.WriteLine("conn str was null or empty");
+}
+else
+{
+    Console.WriteLine(connstr);
+}
 
 app.UseCors();
 
