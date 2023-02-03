@@ -1,6 +1,8 @@
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using FSEDataFeedAPI.Models;
+using FSEDataFeedAPI.Services;
 
 using FSEDataFeedAPI;
 
@@ -25,6 +27,9 @@ using FSEDataFeedAPI;
 // NOTE: https://letsencrypt.org/ 
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDB"));
+builder.Services.AddSingleton<MongoDBService>();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
@@ -77,6 +82,7 @@ else
 }
 
 //app.UseHttpsRedirection();
+Console.WriteLine(Environment.GetEnvironmentVariable("FSEJobFinder_ConnectionString"));
 
 app.UseCors();
 
