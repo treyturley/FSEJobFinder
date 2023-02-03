@@ -83,7 +83,7 @@ else
 
 //app.UseHttpsRedirection();
 Console.WriteLine("getting conn string from env...");
-string connstr = Environment.GetEnvironmentVariable("FSEJobFinder_ConnectionString");
+string connstr = Environment.GetEnvironmentVariable("FSEJOBFINDER_CONNECTIONSTRING");
 if (connstr == null || connstr.Length == 0)
 {
     Console.WriteLine("conn str was null or empty");
