@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using static FSEDataFeed.AircraftMakeModel;
+using FSEDataFeedAPI.Models;
+
 
 namespace FSEDataFeedAPI.Controllers
 {
@@ -20,13 +22,17 @@ namespace FSEDataFeedAPI.Controllers
         // TODO: start logging requests
         private readonly ILogger<FSEJobFinderController> _logger;
 
+        private readonly MongoDBService _mongoDBService;
+
         /// <summary>
         /// Constructor for the FSEJobFinderController.
         /// </summary>
         /// <param name="logger"></param>
-        public FSEJobFinderController(ILogger<FSEJobFinderController> logger)
+        /// <param name="mongoDBService"></param>
+        public FSEJobFinderController(ILogger<FSEJobFinderController> logger, MongoDBService mongoDBService)
         {
             _logger = logger;
+            _mongoDBService = mongoDBService;
         }
 
         /// <summary>
@@ -46,14 +52,14 @@ namespace FSEDataFeedAPI.Controllers
         /// </summary>
         /// <param name="aircraft">The commercial aircraft to find assignments for.</param>
         /// <param name="limit">The number of assignments to get back or -1 to get all available assignments.</param>
-        /// <returns>A JsonResult containing the available assignments.</returns>
+        /// <returns>A JsonResult containing the latest available assignments.</returns>
         /// <response code="200">Json body describing the available assignments. 
         /// assignments are sorted by payout in descending order.</response>
         /// <response code="400">Error message describing the request error.</response>
         [HttpGet("v1/assignments/{aircraft}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public ActionResult<List<Assignment>> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
+        public async Task<ActionResult<List<Assignment>>> GetCommercialAssignments(AircraftMakeModel.MakeModel aircraft, int limit = -1)
         {
             // TODO: consider adding additional params to allow filtering/sorting/pagination
             string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
@@ -73,7 +79,42 @@ namespace FSEDataFeedAPI.Controllers
                     errorMsg = "Limit must be positive or not included at all"
                 });
             }
-            return new JsonResult(fseDataService.GetService(userKey).getCommercialAssignments(makeModelStr, limit));
+            List<Assignment> assignmentList = fseDataService.GetService(userKey).getCommercialAssignments(makeModelStr, limit);
+
+            // only replace the existing recent jobs if some jobs were retrieved from FSE
+            if (assignmentList.Count > 0)
+            {
+                await _mongoDBService.UpdateAssignmentByMakeModelAsync(makeModelStr, new Assignments { aircraft = makeModelStr, jobs = assignmentList, updatedAt = DateTime.Now });
+            }
+
+            return new JsonResult(assignmentList);
+        }
+
+        /// <summary>
+        /// Gets assignments from the DB that were retrieved in a previous assignments request.
+        /// </summary>
+        /// <param name="aircraft">The commercial aircraft to find assignments for.</param>
+        /// <returns>A JsonResult containing previously retrieved assignments.</returns>
+        [HttpGet("v1/getRecentAssignments/{aircraft}")]
+        public async Task<Assignments> GetRecentCommercialAssignments(AircraftMakeModel.MakeModel aircraft)
+        {
+            string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
+            return await _mongoDBService.GetAssignmentByMakeModelAsync(makeModelStr);
+        }
+
+        /// <summary>
+        /// Adds a new assignment entry to the database.
+        /// </summary>
+        /// <param name="aircraft">The aircraft makemodel associated to the assignments.</param>
+        /// <param name="assignments">The assignments to be added to the DB.</param>
+        /// <returns></returns>
+        [ApiExplorerSettings(IgnoreApi = true)]
+        [HttpPost("v1/addRecentAssignments/{aircraft}")]
+        public async Task<IActionResult> AddRecentAssignmentsByMakeModel(AircraftMakeModel.MakeModel aircraft, [FromBody] Assignments assignments)
+        {
+            string makeModelStr = AircraftMakeModel.GetMakeModelString(aircraft);
+            await _mongoDBService.CreateAsync(assignments);
+            return CreatedAtAction(nameof(GetRecentCommercialAssignments), new { assignments.aircraft }, assignments);
         }
 
         /// <summary>
@@ -96,26 +137,7 @@ namespace FSEDataFeedAPI.Controllers
             {
                 return InvalidUserKeyResponse();
             }
-            //return new JsonResult(fseDataService.GetService(userKey).getBestCommercialAssignment(makeModelStr));
-
-            Thread.Sleep(2500);
-            return new JsonResult(new
-            {
-                aircraftId="47911",
-                amount="115",
-                commodity="Pax - Airline Pilot for Hire",
-                expireDateTime="2022-10-27 01:31:12",
-                expires="20 hrs",
-                express="True",
-                fromIcao="KDFW",
-                id="366558149",
-                jobType="All-In",
-                location="KDFW",
-                pay="15827.00",
-                ptAssignment="false",
-                toIcao="KAUS",
-                unitType="passengers"
-            });
+            return new JsonResult(fseDataService.GetService(userKey).getBestCommercialAssignment(makeModelStr));
         }
 
         /// <summary>

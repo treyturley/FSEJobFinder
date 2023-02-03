@@ -1,6 +1,8 @@
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using FSEDataFeedAPI.Models;
+using FSEDataFeedAPI.Services;
 
 using FSEDataFeedAPI;
 
@@ -26,6 +28,9 @@ using FSEDataFeedAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("MongoDB"));
+builder.Services.AddSingleton<MongoDBService>();
+
 builder.Services.AddControllers().AddJsonOptions(options =>
             options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
@@ -43,12 +48,13 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo {
+    options.CustomOperationIds(apiDesc => $"{apiDesc.ActionDescriptor.RouteValues["controller"]}_{apiDesc.ActionDescriptor.RouteValues["action"]}");
+
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
         Version = "v1",
         Title = "FSEDataFeedAPI",
         Description = "An ASP.NET Core Web API for getting job information from the FSE Game World."
-        // TODO: once the github.io page has a contact link add it here
-        //Contact = ""
     });
 
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -76,6 +82,7 @@ else
 }
 
 //app.UseHttpsRedirection();
+Console.WriteLine(Environment.GetEnvironmentVariable("FSEJobFinder_ConnectionString"));
 
 app.UseCors();
 
