@@ -43,12 +43,13 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo {
+    options.CustomOperationIds(apiDesc => $"{apiDesc.ActionDescriptor.RouteValues["controller"]}_{apiDesc.ActionDescriptor.RouteValues["action"]}");
+
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
         Version = "v1",
         Title = "FSEDataFeedAPI",
         Description = "An ASP.NET Core Web API for getting job information from the FSE Game World."
-        // TODO: once the github.io page has a contact link add it here
-        //Contact = ""
     });
 
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
