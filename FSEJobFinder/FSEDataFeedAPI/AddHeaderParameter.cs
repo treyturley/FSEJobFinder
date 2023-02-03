@@ -11,7 +11,7 @@ namespace FSEDataFeedAPI
     public class AddHeaderParameter : IOperationFilter
     {
         /// <summary>
-        /// Implements the IOperationFilter that checks for the FSE-Access-Key header.
+        /// Adds a requirement that the FSE-Access-Key header is set in the requests that need the key to query the FSEconomy Data Feed.
         /// </summary>
         /// <param name="operation"></param>
         /// <param name="context"></param>
@@ -20,18 +20,22 @@ namespace FSEDataFeedAPI
             if (operation.Parameters == null)
                 operation.Parameters = new List<OpenApiParameter>();
 
-            operation.Parameters.Add(new OpenApiParameter
+            if (operation.OperationId.Contains("GetCommercialAssignments") ||
+                operation.OperationId.Contains("GetBestCommercialAssignment") ||
+                operation.OperationId.Contains("GetUSCommercialAssignments"))
             {
-                Name = "fse-access-key",
-                In = ParameterLocation.Header,
-                Required = true,
-                Schema = new OpenApiSchema
+                operation.Parameters.Add(new OpenApiParameter
                 {
-                    Type = "string"
-                },
-                Description = "The user's FSE Access Key from the FSE Game World."
-                
-            });
+                    Name = "fse-access-key",
+                    In = ParameterLocation.Header,
+                    Required = true,
+                    Schema = new OpenApiSchema
+                    {
+                        Type = "string"
+                    },
+                    Description = "The user's FSE Access Key from the FSE Game World."
+                });
+            }
         }
     }
 }
